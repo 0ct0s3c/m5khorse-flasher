@@ -1,0 +1,38 @@
+{
+  "board": "papermono",
+  "chip": "esp32s3",
+  "flash_bytes": 16777216,
+  "revision": "e614b54",
+  "images": [
+    {
+      "offset": 0,
+      "file": "bootloader.bin",
+      "size": 15104,
+      "sha256": "2a71d69b471e20c2bac7fb469f3c6a807b3ebee780e348e5889db0da849ca363"
+    },
+    {
+      "offset": 32768,
+      "file": "partitions.bin",
+      "size": 3072,
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+    },
+    {
+      "offset": 57344,
+      "file": "boot_app0.bin",
+      "size": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    {
+      "offset": 65536,
+      "file": "K-HORSE-papermono.bin",
+      "size": 3000464,
+      "sha256": "42c3792c92d29453fcd909ef0b76142aa419d488af4b3d969852557aebdbea09"
+    }
+  ],
+  "factory": {
+    "file": "K-HORSE-papermono.factory.bin",
+    "offset": 0,
+    "size": 3066000,
+    "sha256": "fcfa41fccb98723e8f76822d560febc47d7eeaf92846953a93eaeb624047771a"
+  }
+}

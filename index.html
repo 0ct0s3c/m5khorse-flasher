@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Small device. God complex. Install KEY-HORSE on your PaperMono: books, NFC, voice notes, LoRa messages, and one spectacularly unqualified horse."
+    />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>KEY-HORSE — PaperMono flasher</title>
+    <link rel="icon" href="assets/horse.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#installer">Skip to installer</a>
+    <div class="page">
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="KEY-HORSE home"
+          >KEY-HORSE<span class="mark" aria-hidden="true">✳</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#installer">Install the horse</a><a href="#help">Something broke?</a
+          ><a data-repository hidden>Downloads ↗</a>
+        </nav>
+      </header>
+      <main>
+        <div class="edition">
+          <span>THE PAPERMONO EDITION</span
+          ><span>FOUR HANDS. NO ADULT SUPERVISION.</span>
+        </div>
+        <div class="hero">
+          <section class="intro" aria-labelledby="title">
+            <p class="eyebrow">
+              <span class="square" aria-hidden="true"></span> A POCKET LIBRARY WITH A CONDUCT PROBLEM
+            </p>
+            <h1 id="title">Small device.<br /><em>God complex.</em></h1>
+            <p class="dek">
+              Books. NFC. Voice notes. LoRa messages.<br />
+              Supervised by a horse with no business supervising a fucking thing.
+            </p>
+            <div class="horse-scene">
+              <img
+                src="assets/horse.png"
+                width="192"
+                height="192"
+                alt="The four-armed KEY-HORSE librarian holding a book, a mug, a card and a microphone."
+              />
+              <div class="horse-commentary">
+                <p class="eyebrow">THE RESIDENT / UNSUPERVISED</p>
+                <blockquote id="horse-remark" aria-live="polite" aria-atomic="true">“Your books have endings. My bullshit gets updates.”</blockquote>
+                <button class="horse-more" id="horse-more" hidden>
+                  Another unsolicited opinion <span aria-hidden="true">↻</span>
+                </button>
+              </div>
+            </div>
+            <p class="feature-line">
+              <span>TXT READER</span><span>NFC TOOLS</span><span>VOICE LOG</span><span>LORA MESH</span>
+            </p>
+            <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. Just an increasingly entitled horse.</p>
+          </section>
+
+          <section
+            class="installer"
+            id="installer"
+            aria-labelledby="install-title"
+          >
+            <div class="card-heading">
+              <span class="eyebrow">USB WEB FLASHER</span
+              ><span class="tag">PAPERMONO C153</span>
+            </div>
+            <h2 id="install-title">Let the bastard in.</h2>
+            <p class="card-intro">
+              Install or update KEY-HORSE over USB.<br />
+              Bring a data cable. The attitude is bundled.
+            </p>
+            <ol class="workflow" aria-label="Installation stages">
+              <li id="phase-prepare" data-phase="current" aria-current="step"><span aria-hidden="true">01</span> Prepare</li>
+              <li id="phase-connect"><span aria-hidden="true">02</span> Connect</li>
+              <li id="phase-install"><span aria-hidden="true">03</span> Install &amp; verify</li>
+            </ol>
+            <p class="browser-check" id="browser-check" role="status">Checking USB browser support…</p>
+            <dl class="release" aria-label="Firmware package">
+              <div>
+                <dt>FIRMWARE</dt>
+                <dd>KEY-HORSE <span id="revision">—</span></dd>
+              </div>
+              <div>
+                <dt>BOARD</dt>
+                <dd>ESP32-S3 / 16 MB</dd>
+              </div>
+              <div>
+                <dt>PACKAGE</dt>
+                <dd id="package-size">Checking release…</dd>
+              </div>
+            </dl>
+            <details class="setup-guide" id="setup-guide" open>
+              <summary>USB setup <span class="setup-hint">Cable · download mode · connect</span></summary>
+              <ol class="steps" id="before">
+              <li>
+                <span>01</span>
+                <div>
+                  <strong>Plug in your PaperMono.</strong>
+                  <p>
+                    Use desktop Chrome or Edge and a USB data cable. Close
+                    serial monitors and other flashers.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <strong>Enter download mode.</strong>
+                  <p>
+                    Hold the power button for about 2 seconds. Release when the
+                    red LED blinks.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <strong>Connect, then install.</strong>
+                  <p>
+                    Select the PaperMono USB port. Keep the cable connected
+                    until verification finishes.
+                  </p>
+                </div>
+              </li>
+              </ol>
+            </details>
+            <label class="board-check"
+              ><input id="board-confirm" type="checkbox" aria-describedby="board-note" /><span
+                >My board is a
+                <strong>PaperMono C153 with NFC + LoRa</strong>.</span
+              ></label
+            >
+            <p class="board-note" id="board-note">
+              PaperMono-Lite, Paper and PaperS3 need different firmware.
+              Connecting restarts the device.
+            </p>
+            <button class="primary" id="connect" disabled>
+              Connect PaperMono <span aria-hidden="true">↗</span>
+            </button>
+            <button class="primary" id="install" hidden disabled>
+              Install KEY-HORSE <span aria-hidden="true">↓</span>
+            </button>
+            <button class="secondary" id="disconnect" hidden>
+              Disconnect without installing
+            </button>
+            <div class="installation-state" id="installation-state" data-state="checking" tabindex="-1" aria-labelledby="status-label">
+              <div class="status-heading">
+                <span id="status-label">CHECKING THE PACKAGE</span>
+                <span id="progress-label" aria-hidden="true" hidden>0%</span>
+              </div>
+              <div class="status" role="status" aria-live="polite" aria-atomic="true">
+                <span class="status-dot" aria-hidden="true"></span
+                ><span id="status-text">Downloading and checking the firmware files…</span>
+              </div>
+              <progress
+                id="progress"
+                value="0"
+                max="100"
+                aria-label="Firmware installation progress"
+                hidden
+              ></progress>
+              <p class="transfer-detail" id="transfer-detail" role="status" hidden></p>
+              <ol class="segment-receipt" id="segment-receipt" aria-label="Device verification by segment" hidden>
+                <li id="segment-0" data-state="pending"><span>Bootloader</span><strong id="segment-state-0">Waiting</strong></li>
+                <li id="segment-1" data-state="pending"><span>Partition table</span><strong id="segment-state-1">Waiting</strong></li>
+                <li id="segment-2" data-state="pending"><span>Boot selection</span><strong id="segment-state-2">Waiting</strong></li>
+                <li id="segment-3" data-state="pending"><span>KEY-HORSE firmware</span><strong id="segment-state-3">Waiting</strong></li>
+              </ol>
+              <button class="retry" id="retry-package" hidden>Check the package again <span aria-hidden="true">↻</span></button>
+              <div class="status-actions">
+                <a class="log-link" id="status-log" href="#log" hidden>Read the installation log ↗</a>
+                <button class="log-link" id="save-log" hidden>Save log <span aria-hidden="true">↓</span></button>
+              </div>
+            </div>
+            <section class="next-step" id="next-step" aria-labelledby="next-title" hidden>
+              <p class="eyebrow">NEXT / OVER TO YOU</p>
+              <h3 id="next-title"></h3>
+              <p id="next-text"></p>
+              <a id="next-link" href="#aftercare">Meet your new dependent ↗</a>
+            </section>
+            <p class="preserve">
+              Updates keep KEY-HORSE settings and the device PIN.<br />Your
+              microSD files stay on the card.
+            </p>
+            <noscript
+              ><p class="error">
+                Enable JavaScript to use the USB flasher. The setup notes below
+                remain available.
+              </p></noscript
+            >
+          </section>
+        </div>
+
+        <section class="aftercare" id="aftercare" aria-label="After installation">
+          <p class="eyebrow">POST-INSTALL / THE HORSE IS YOUR PROBLEM NOW</p>
+          <div class="aftercare-grid">
+            <h2>
+              Read books.<br />Acquire <em>issues.</em>
+            </h2>
+            <div>
+              <span class="number">01 / READ</span>
+              <h3>Your attention span pays rent.</h3>
+              <p>
+                Put UTF-8 .txt books in <code>/books</code> on a microSD card.
+                Open <strong>READ → Books</strong>. Built-in samples are ready
+                without a card. Reading earns horse food. Finally, a dependent
+                you can support by ignoring everyone else.
+              </p>
+            </div>
+            <div>
+              <span class="number">02 / EXPLORE</span>
+              <h3>A very employable rectangle.</h3>
+              <p>
+                Read NFC tags, record a passing thought, or configure the
+                onboard LoRa messenger. Start from <strong>WRITE</strong> and
+                <strong>READ</strong>. The horse offers storage, not absolution.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="help" id="help" aria-labelledby="help-title">
+          <div>
+            <p class="eyebrow">TECHNICAL SUPPORT / NO EXORCIST ON STAFF</p>
+            <h2 id="help-title">Shit's not working.</h2>
+            <p>
+              A diagnosis first. A small breakdown later.<br />
+              Let's start with the cable.
+            </p>
+          </div>
+          <div class="questions">
+            <details>
+              <summary>My PaperMono doesn't appear.</summary>
+              <p>
+                Try a USB data cable; some cables only supply power. A charging
+                cable with career ambitions is still a charging cable. Close
+                serial monitors, M5Burner and other flasher tabs. Hold the power
+                button for about 2 seconds until the red LED blinks, release it,
+                then choose Connect PaperMono again.
+                <a href="https://docs.m5stack.com/en/core/PaperMono"
+                  >M5Stack's board guide ↗</a
+                >
+              </p>
+            </details>
+            <details>
+              <summary>Will this erase my books or settings?</summary>
+              <p>
+                This installer writes four firmware segments and does not erase
+                the whole chip. It preserves KEY-HORSE's NVS settings, including
+                your PIN, and never accesses the microSD card. A first install
+                replaces the previous firmware; settings from other firmware may
+                not be compatible. Keep copies of files you value. The horse
+                is many things. A backup strategy is not one of them.
+              </p>
+            </details>
+            <details id="recovery-help">
+              <summary>The installation was interrupted.</summary>
+              <p>
+                Some firmware bytes may already have been written. Check the
+                device and installation log before starting another attempt.
+                Restore the USB connection and enter download mode if recovery
+                is needed. The flasher never automatically repeats an
+                installation.
+              </p>
+            </details>
+            <details id="restart-help">
+              <summary>
+                It says verified, but the screen hasn't changed.
+              </summary>
+              <p>
+                The e-paper panel retains its image without power. After
+                verification, let the device restart and give the first refresh
+                a moment. The screen can display yesterday's bullshit without
+                a single electron of enthusiasm. If needed, briefly press the power button to restart.
+                Verification checks flash bytes; check the screen, touch and NFC
+                on the device separately.
+              </p>
+            </details>
+            <details>
+              <summary>Can I install without this browser?</summary>
+              <p>
+                Use desktop Chrome or Edge on a computer with USB serial support.
+                This page supplies the firmware; no Python, compiler or local server
+                is needed. Open Release files below for the four flash segments and
+                their manifest if you use another installer. Match the offsets and
+                verify every write. Guesswork is for my Tarot readings.
+                <a data-repository hidden>Open the download and install notes ↗</a>
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <details class="technical" id="technical">
+          <summary>Release files &amp; installation log <span class="receipt-note">THE HORSE KEPT THE RECEIPTS</span></summary>
+          <p>
+            <a id="manifest-link" hidden>Download the segment manifest</a>
+            <span id="download-list"></span>
+          </p>
+          <pre id="log" tabindex="0" aria-label="Installation log">
+No device connected.</pre>
+          <p class="technical-note">
+            Downloads are checked with SHA-256 before connecting. Each written
+            segment is checked against the device's MD5 digest. USB chip
+            detection cannot distinguish PaperMono from every other ESP32-S3
+            board; confirm the model above.
+            <a href="licenses.txt">Open-source notices</a>.
+          </p>
+        </details>
+      </main>
+      <footer>
+        <span
+          ><strong>KEY-HORSE</strong>
+          <span class="footer-byline"
+            >/ Made by 0ct0. HR has blocked our number.</span
+          ></span
+        ><a href="https://buymeacoffee.com/0ct0">Fund the oat dependency ↗</a>
+      </footer>
+    </div>
+  </body>
+</html>

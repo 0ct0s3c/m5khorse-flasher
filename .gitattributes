@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve the exact manifest bytes covered by the release digest.
+firmware/** -text -whitespace
+*.bin binary
+*.png binary
+# Upstream notices retain their original whitespace.
+licenses.txt -whitespace
+app.js.LEGAL.txt -whitespace
