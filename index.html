@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Install KEY-HORSE on M5Stack PaperMono C153: TXT books, NFC tools, voice notes, Meshtastic messages and 78 cards of unsolicited horse advice."
+      content="A pocket library. A few radios. An occult liability. Meet KEY-HORSE, draw from 78 illustrated Horse Tarot cards, and install on PaperMono C153."
     />
-    <meta name="theme-color" content="#f5f4ef" />
-    <title>KEY-HORSE — Install on PaperMono</title>
+    <meta name="theme-color" content="#f3f1e9" />
+    <title>KEY-HORSE — Your future. Oh, fuck.</title>
     <link rel="icon" href="assets/horse.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="app.js"></script>
@@ -21,46 +21,95 @@
           >KEY-HORSE<span class="mark" aria-hidden="true">✳</span></a
         >
         <nav aria-label="Main navigation">
-          <a href="#installer">Install the horse</a><a href="#help">Something broke?</a
+          <a class="nav-install" href="#installer">Install <span aria-hidden="true">↘</span></a><a href="#tarot">Draw a card</a><a href="#help">Help</a
           ><a data-repository hidden>Downloads ↗</a>
         </nav>
       </header>
       <main>
         <div class="edition">
           <span>THE PAPERMONO EDITION</span
-          ><span>FOUR HANDS. NO ADULT SUPERVISION.</span>
+          ><span>EST. AGAINST BETTER JUDGMENT · BY 0CT0</span>
         </div>
         <div class="hero">
           <section class="intro" aria-labelledby="title">
             <p class="eyebrow">
-              <span class="square" aria-hidden="true"></span> A POCKET LIBRARY WITH A CONDUCT PROBLEM
+              <span class="square" aria-hidden="true"></span> POCKET LIBRARY / OCCULT LIABILITY
             </p>
-            <h1 id="title">Small device.<br /><em>God complex.</em></h1>
+            <h1 id="title">Your future.<br /><em>Oh, fuck.</em></h1>
             <p class="dek">
-              Books. NFC. Voice notes. Meshtastic messages.<br />
-              Four hands. Not one qualified to supervise a fucking thing.
+              Read a book. Talk over radio. Consult a horse who has been
+              barred from the astral plane for <em>“making it fucking weird.”</em>
             </p>
-            <div class="horse-scene">
-              <img
-                src="assets/horse.png"
-                width="192"
-                height="192"
-                alt="The four-armed KEY-HORSE librarian holding a book, a mug, a card and a microphone."
-              />
-              <div class="horse-commentary">
-                <p class="eyebrow">THE RESIDENT / UNSUPERVISED</p>
-                <blockquote id="horse-remark" aria-live="polite" aria-atomic="true">“Your books have endings. My bullshit gets updates.”</blockquote>
-                <button class="horse-more" id="horse-more" hidden>
-                  Another unsolicited opinion <span aria-hidden="true">↻</span>
-                </button>
-              </div>
+            <p class="hero-detail">
+              KEY-HORSE puts books, NFC tools, voice notes and radios on the
+              M5Stack PaperMono C153. Plus 78 illustrated tarot cards, because
+              apparently a pocket computer needed a fucking prophecy department.
+            </p>
+            <div class="hero-actions">
+              <a class="primary" href="#installer">Install KEY-HORSE <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#aftercare">What's in the rectangle? ↓</a>
             </div>
-            <p class="feature-line">
-              <span>TXT BOOKS</span><span>NFC TOOLS</span><span>VOICE LOG</span><span>LORA MESH</span><span>WI-FI + BLE</span><span>BLUES HID</span><span>78-CARD TAROT</span>
-            </p>
-            <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. No streak threats. The horse eats when you read and minds his own damn business when you don't.</p>
+            <ul class="feature-line" aria-label="On the device">
+              <li>TXT BOOKS</li><li>NFC TOOLS</li><li>VOICE LOG</li><li>LORA MESH</li><li>WI-FI + BLE</li><li>BLUES HID</li><li>78-CARD TAROT</li>
+            </ul>
+            <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. No streak guilt. I will not die for a fucking retention metric.</p>
           </section>
 
+          <section class="tarot-stage" id="tarot" aria-label="Draw a Horse Tarot card">
+            <div class="tarot-heading"><span class="eyebrow">THE HORSE TAROT</span><span class="deck-stamp">78 CARDS / 156 READINGS</span></div>
+            <p class="eyebrow tarot-kicker">THE DEPARTMENT OF FORESEEABLE BULLSHIT</p>
+            <div class="tarot-spread">
+              <figure class="flank-card flank-left" aria-hidden="true">
+                <span>XIII / DEATH</span>
+                <img src="assets/tarot/card-13.png" width="384" height="384" alt="" />
+                <figcaption>DEATH, BUT<br />WITH ADMIN</figcaption>
+              </figure>
+              <figure class="flank-card flank-right" aria-hidden="true">
+                <span>XVI / THE TOWER</span>
+                <img src="assets/tarot/card-16.png" width="384" height="384" alt="" />
+                <figcaption>STRUCTURAL<br />FUCKING FAILURE</figcaption>
+              </figure>
+              <figure class="tarot-card">
+                <p id="tarot-number">00 / Major Arcana</p>
+                <img id="tarot-image" src="assets/tarot/card-00.png" width="384" height="384" fetchpriority="high" alt="The Unsupervised Bastard: monochrome Horse Tarot illustration of the four-armed horse librarian." />
+                <figcaption><h2 id="tarot-title">THE UNSUPERVISED BASTARD</h2></figcaption>
+              </figure>
+            </div>
+            <div class="oracle-copy" aria-live="polite" aria-atomic="true">
+              <p class="reading-meta"><span id="tarot-traditional">The Fool</span><span id="tarot-orientation">Upright</span></p>
+              <blockquote id="tarot-reading">“Four arms. No plan. The universe has asked me to stop touching things.”</blockquote>
+            </div>
+            <div class="oracle-actions">
+              <button id="tarot-draw" class="draw-card" hidden>Draw another bastard <span aria-hidden="true">↗</span></button>
+              <button id="tarot-flip" class="text-link" hidden>Read reversed ↻</button>
+            </div>
+            <p class="deck-count" id="tarot-count">78 cards. 156 readings. Zero fucking qualifications.</p>
+            <noscript><p class="deck-count">Enable JavaScript to draw from the full deck.</p></noscript>
+          </section>
+        </div>
+
+        <section class="install-section" aria-label="Install KEY-HORSE">
+          <div class="install-aside">
+            <p class="eyebrow">01 / SUMMONING INSTRUCTIONS</p>
+            <h2>A small device.<br /><em>An enormous<br />fucking liability.</em></h2>
+            <p>Bring the board and a USB data cable. I'll bring a library,
+              several radios and the energy of an exorcism conducted by a temp.</p>
+            <dl class="install-kit" aria-label="What you need to install">
+              <div><dt>THE BOARD</dt><dd>PaperMono C153 <span>NFC + LoRa · ESP32-S3 · 16 MB</span></dd></div>
+              <div><dt>THE BROWSER</dt><dd>Desktop Chrome or Edge</dd></div>
+              <div><dt>THE CABLE</dt><dd>USB data cable <span>Charging-only cables won't do.</span></dd></div>
+            </dl>
+            <div class="horse-scene">
+              <img src="assets/horse.png" width="192" height="192" loading="lazy" alt="The four-armed horse librarian holding a book, a mug, a card and a microphone." />
+              <div class="horse-commentary">
+                <p class="eyebrow">YOUR RESIDENT / LEGALLY A HORSE</p>
+                <blockquote id="horse-remark" aria-live="polite" aria-atomic="true">“I asked the universe for a sign. It sent a cease-and-desist.”</blockquote>
+                <button class="horse-more" id="horse-more" hidden>Make him worse <span aria-hidden="true">↻</span></button>
+              </div>
+            </div>
+            <p class="aside-footnote">The cards are entertainment. The USB instructions are instructions.
+              Confuse these and you'll be holding the power button through a séance.</p>
+          </div>
           <section
             class="installer"
             id="installer"
@@ -73,7 +122,7 @@
             <h2 id="install-title">Let the bastard in.</h2>
             <p class="card-intro">
               Install or update KEY-HORSE on PaperMono C153 over USB.<br />
-              Bring a data cable. The attitude is bundled.
+              The ritual takes a data cable. Blood voids the warranty on the carpet.
             </p>
             <ol class="workflow" aria-label="Installation stages">
               <li id="phase-prepare" data-phase="current" aria-current="step"><span aria-hidden="true">01</span> Prepare</li>
@@ -198,46 +247,75 @@
               </p></noscript
             >
           </section>
-        </div>
+        </section>
 
         <section class="aftercare" id="aftercare" aria-label="After installation">
-          <p class="eyebrow">POST-INSTALL / THE HORSE IS YOUR PROBLEM NOW</p>
-          <div class="aftercare-grid">
+          <div class="section-heading">
+            <p class="eyebrow">02 / IT ALSO DOES USEFUL SHIT</p>
             <h2>
-              Read books.<br />Acquire <em>issues.</em>
+              Useful things.<br /><em>Terrible company.</em>
             </h2>
+          </div>
+          <div class="aftercare-grid">
             <div>
               <span class="number">01 / READ</span>
-              <h3>Turn the reading pile into lunch.</h3>
+              <h3>Your reading pile has a parasite.</h3>
               <p>
                 Put UTF-8 .txt books in <code>/books</code> on a microSD card.
                 Open <strong>READ → Books</strong>, or start with a built-in
                 sample without a card. Fresh reading earns food; tap the horse's
                 stats to feed him in <strong>MY HORSE</strong>. He calls this a
-                literary partnership. You are paying for both lunches.
+                literary partnership. You have acquired a four-armed tapeworm
+                with opinions on narrative structure.
               </p>
             </div>
             <div>
-              <span class="number">02 / EXPLORE</span>
-              <h3>The rectangle has other commitments.</h3>
+              <span class="number">02 / NFC</span>
+              <h3>Inspect the little plastic bastard.</h3>
               <p>
-                Explore NFC tools, voice notes and Meshtastic messages from
-                <strong>WRITE</strong> and <strong>READ</strong>. Recordings and
-                saved tags need a microSD card. Set your LoRa region and channel
-                before messaging. <strong>READ → Tarot</strong> deals 78 illustrated
-                cards. Apparently four hands weren't enough ways to give bad advice.
+                Read supported NFC tags, save captures to microSD and use the
+                supported write and presentation tools. The horse can inspect
+                a tag. He cannot sweet-talk a locked door into a different security model.
               </p>
+            </div>
+            <div>
+              <span class="number">03 / VOICE LOG</span>
+              <h3>Record your descent into genius.</h3>
+              <p>Record voice notes to microSD and play them back on the device.
+                Capture the thought before it escapes. Later, establish whether
+                it was a thought or just a fart wearing a little hat.</p>
+            </div>
+            <div>
+              <span class="number">04 / MESHTASTIC</span>
+              <h3>Gossip beyond the router.</h3>
+              <p>Send Meshtastic messages over LoRa. Set your region and channel
+                first; compatible peers must be in radio range. No mobile network
+                required. Your terrible opinions can now cross a field under their own steam.</p>
+            </div>
+            <div>
+              <span class="number">05 / WIRELESS + BLUES HID</span>
+              <h3>The air is full of bullshit.</h3>
+              <p>Observe Wi-Fi and BLE, inspect LoRa signal levels, or use BLUES
+                as a Bluetooth keyboard, mouse and media remote with a paired
+                device. Four hands, and he still types like a fucking bailiff.</p>
+            </div>
+            <div>
+              <span class="number">06 / HORSE TAROT</span>
+              <h3>Ask a deeply unqualified cunt.</h3>
+              <p><strong>READ → Tarot</strong> opens 78 illustrated cards with
+                upright and reversed readings. Spite. Poor Decisions. Grudges. Debt.
+                Finally, a spiritual practice with an accurate household budget.</p>
             </div>
           </div>
         </section>
 
         <section class="help" id="help" aria-labelledby="help-title">
           <div>
-            <p class="eyebrow">TECHNICAL SUPPORT / NO EXORCIST ON STAFF</p>
+            <p class="eyebrow">03 / TECHNICAL SUPPORT, SOMEHOW</p>
             <h2 id="help-title">Shit's not working.</h2>
             <p>
-              The log keeps the facts. I supply the commentary.<br />
-              Let's start with the cable.
+              Mercury is not in retrograde. Your cable might be shit.<br />
+              Let's establish which problem we actually have.
             </p>
           </div>
           <div class="questions">
@@ -332,7 +410,7 @@ No device connected.</pre>
         <span
           ><strong>KEY-HORSE</strong>
           <span class="footer-byline"
-            >/ Made by 0ct0. HR has blocked our number.</span
+            >/ Made by 0ct0. The astral plane has a restraining order.</span
           ></span
         ><a href="https://buymeacoffee.com/0ct0">Fund the oat dependency ↗</a>
       </footer>

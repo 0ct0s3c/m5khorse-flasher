@@ -1,0 +1,860 @@
+[
+  {
+    "index": 0,
+    "title": "THE UNSUPERVISED BASTARD",
+    "traditional": "The Fool",
+    "family": "Major Arcana",
+    "readings": [
+      "Four arms. No plan. The universe has asked me to stop touching things.",
+      "I checked the cliff for a warning sign. Apparently I was the warning sign."
+    ],
+    "image": "assets/tarot/card-00.png"
+  },
+  {
+    "index": 1,
+    "title": "THE FOUR-ARMED LIABILITY",
+    "traditional": "The Magician",
+    "family": "Major Arcana",
+    "readings": [
+      "All the tools are on the table. I have eaten the instructions.",
+      "Four hands doing sleight of hand. Somehow the rabbit owes me money."
+    ],
+    "image": "assets/tarot/card-01.png"
+  },
+  {
+    "index": 2,
+    "title": "THE SUSPECT PRIESTESS",
+    "traditional": "The High Priestess",
+    "family": "Major Arcana",
+    "readings": [
+      "My inner voice knows things. My inner mouth keeps telling people.",
+      "The secret knowledge was a recipe. I have summoned a fucking quiche."
+    ],
+    "image": "assets/tarot/card-02.png"
+  },
+  {
+    "index": 3,
+    "title": "THE BROODMARE OF BAD IDEAS",
+    "traditional": "The Empress",
+    "family": "Major Arcana",
+    "readings": [
+      "Something is growing. I refuse to tell the landlord what.",
+      "I nurtured a small problem. It now has a conservatory and three children."
+    ],
+    "image": "assets/tarot/card-03.png"
+  },
+  {
+    "index": 4,
+    "title": "THE EMPEROR OF FUCK ALL",
+    "traditional": "The Emperor",
+    "family": "Major Arcana",
+    "readings": [
+      "I rule this kingdom with an iron hoof. The kingdom is a folding chair.",
+      "A coup has occurred. The chair has folded."
+    ],
+    "image": "assets/tarot/card-04.png"
+  },
+  {
+    "index": 5,
+    "title": "THE CULT'S HR DEPARTMENT",
+    "traditional": "The Hierophant",
+    "family": "Major Arcana",
+    "readings": [
+      "Welcome to the ancient order. The robes are itchy and the snacks are shit.",
+      "I questioned the sacred text. It was a dishwasher manual."
+    ],
+    "image": "assets/tarot/card-05.png"
+  },
+  {
+    "index": 6,
+    "title": "THE MUTUAL RED FLAGS",
+    "traditional": "The Lovers",
+    "family": "Major Arcana",
+    "readings": [
+      "Two souls. One terrible idea. Neither of us has read the tenancy agreement.",
+      "We wanted different things. I wanted hay. They wanted fewer inner mouths."
+    ],
+    "image": "assets/tarot/card-06.png"
+  },
+  {
+    "index": 7,
+    "title": "THE HIT-AND-RUN PROPHET",
+    "traditional": "The Chariot",
+    "family": "Major Arcana",
+    "readings": [
+      "Destiny has no brakes. I have written to the manufacturer.",
+      "I took control of my life. It is now sideways in a petrol station."
+    ],
+    "image": "assets/tarot/card-07.png"
+  },
+  {
+    "index": 8,
+    "title": "THE SUPPORT BRICK",
+    "traditional": "Strength",
+    "family": "Major Arcana",
+    "readings": [
+      "Gentleness is strength. So is my emotional support brick.",
+      "I tried to tame the beast within. It ate the little reward biscuit."
+    ],
+    "image": "assets/tarot/card-08.png"
+  },
+  {
+    "index": 9,
+    "title": "THE HERMIT WITH WIFI",
+    "traditional": "The Hermit",
+    "family": "Major Arcana",
+    "readings": [
+      "I withdrew from society. Society has sent a password reset email.",
+      "The light at the end of the tunnel is my unread-message counter."
+    ],
+    "image": "assets/tarot/card-09.png"
+  },
+  {
+    "index": 10,
+    "title": "WHEEL OF FUCK AROUND",
+    "traditional": "Wheel of Fortune",
+    "family": "Major Arcana",
+    "readings": [
+      "Round it goes. I have put my entire personality on the wrong horse.",
+      "The wheel stopped. The horse is still going. Please catch the horse."
+    ],
+    "image": "assets/tarot/card-10.png"
+  },
+  {
+    "index": 11,
+    "title": "THE FUCKING CONSEQUENCES",
+    "traditional": "Justice",
+    "family": "Major Arcana",
+    "readings": [
+      "The evidence is damning. Unfortunately I have signed it in hoofprints.",
+      "I ate the evidence. The jury has asked to see the horse."
+    ],
+    "image": "assets/tarot/card-11.png"
+  },
+  {
+    "index": 12,
+    "title": "THE HUNGOVER MAN",
+    "traditional": "The Hanged Man",
+    "family": "Major Arcana",
+    "readings": [
+      "A fresh perspective. Mostly ceiling. Please stop moving the ceiling.",
+      "I have learned nothing, but from an exciting new angle."
+    ],
+    "image": "assets/tarot/card-12.png"
+  },
+  {
+    "index": 13,
+    "title": "DEATH, BUT WITH ADMIN",
+    "traditional": "Death",
+    "family": "Major Arcana",
+    "readings": [
+      "An ending approaches. Bring two forms of ID and a black pen.",
+      "I refused to let go. Death has opened a support ticket."
+    ],
+    "image": "assets/tarot/card-13.png"
+  },
+  {
+    "index": 14,
+    "title": "ONE MORE WON'T HURT",
+    "traditional": "Temperance",
+    "family": "Major Arcana",
+    "readings": [
+      "Balance is important. I hold one terrible idea in each of my four hands.",
+      "I mixed moderation with poor judgment. It has eaten through the cup."
+    ],
+    "image": "assets/tarot/card-14.png"
+  },
+  {
+    "index": 15,
+    "title": "THE DEVIL'S PLUS-ONE",
+    "traditional": "The Devil",
+    "family": "Major Arcana",
+    "readings": [
+      "The chains are loose. I stay because the buffet is fucking excellent.",
+      "I broke free of temptation. It has followed me home with a little bag."
+    ],
+    "image": "assets/tarot/card-15.png"
+  },
+  {
+    "index": 16,
+    "title": "STRUCTURAL FUCKING FAILURE",
+    "traditional": "The Tower",
+    "family": "Major Arcana",
+    "readings": [
+      "A revelation from above. Mostly masonry.",
+      "The tower passed inspection. The inspector was three rats in a hard hat."
+    ],
+    "image": "assets/tarot/card-16.png"
+  },
+  {
+    "index": 17,
+    "title": "THE LAST FUCK TO GIVE",
+    "traditional": "The Star",
+    "family": "Major Arcana",
+    "readings": [
+      "A small light survives. I am guarding it with an unreasonable chair.",
+      "Hope is not lost. I put it somewhere safe and forgot where."
+    ],
+    "image": "assets/tarot/card-17.png"
+  },
+  {
+    "index": 18,
+    "title": "THE PARANOIA PONY",
+    "traditional": "The Moon",
+    "family": "Major Arcana",
+    "readings": [
+      "Trust your instincts. Mine say the wardrobe has a second job.",
+      "The monster was a coat. The coat has requested an apology."
+    ],
+    "image": "assets/tarot/card-18.png"
+  },
+  {
+    "index": 19,
+    "title": "THE UNBEARABLE DAYSTAR",
+    "traditional": "The Sun",
+    "family": "Major Arcana",
+    "readings": [
+      "Joy. Warmth. A bright new day to make the same bastard mistake.",
+      "My inner child wants to play. My outer horse wants the curtains shut."
+    ],
+    "image": "assets/tarot/card-19.png"
+  },
+  {
+    "index": 20,
+    "title": "THE FINAL PERFORMANCE REVIEW",
+    "traditional": "Judgement",
+    "family": "Major Arcana",
+    "readings": [
+      "The dead have risen. Apparently this meeting could not have been an email.",
+      "I ignored the call. Heaven has left a passive-aggressive voicemail."
+    ],
+    "image": "assets/tarot/card-20.png"
+  },
+  {
+    "index": 21,
+    "title": "THE WORLD'S PROBLEM NOW",
+    "traditional": "The World",
+    "family": "Major Arcana",
+    "readings": [
+      "The journey is complete. I have become an international fucking incident.",
+      "One final loose end. It is me. I am chewing the tapestry."
+    ],
+    "image": "assets/tarot/card-21.png"
+  },
+  {
+    "index": 22,
+    "title": "ACE OF SPITE",
+    "traditional": "Ace of Wands",
+    "family": "SPITE",
+    "readings": [
+      "A spark of inspiration. I have already singed the curtains.",
+      "The spark went out. I am blaming the curtains."
+    ],
+    "image": "assets/tarot/card-22.png"
+  },
+  {
+    "index": 23,
+    "title": "TWO OF SPITE",
+    "traditional": "Two of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Two paths ahead. I have brought a grudge for each.",
+      "I planned my escape. The door says pull."
+    ],
+    "image": "assets/tarot/card-23.png"
+  },
+  {
+    "index": 24,
+    "title": "THREE OF SPITE",
+    "traditional": "Three of Wands",
+    "family": "SPITE",
+    "readings": [
+      "My ships are coming in. None of them should have passed inspection.",
+      "The horizon beckons. My parcel is still in customs."
+    ],
+    "image": "assets/tarot/card-24.png"
+  },
+  {
+    "index": 25,
+    "title": "FOUR OF SPITE",
+    "traditional": "Four of Wands",
+    "family": "SPITE",
+    "readings": [
+      "A happy homecoming. Someone has changed the locks for the occasion.",
+      "The celebration has become a residents meeting. I have brought a brick."
+    ],
+    "image": "assets/tarot/card-25.png"
+  },
+  {
+    "index": 26,
+    "title": "FIVE OF SPITE",
+    "traditional": "Five of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Healthy competition. Five horses, one brain cell, no chairperson.",
+      "We agreed to disagree. I am disagreeing from the roof."
+    ],
+    "image": "assets/tarot/card-26.png"
+  },
+  {
+    "index": 27,
+    "title": "SIX OF SPITE",
+    "traditional": "Six of Wands",
+    "family": "SPITE",
+    "readings": [
+      "A public victory. Please clap before anyone checks the arithmetic.",
+      "The victory parade has discovered the horse is the problem."
+    ],
+    "image": "assets/tarot/card-27.png"
+  },
+  {
+    "index": 28,
+    "title": "SEVEN OF SPITE",
+    "traditional": "Seven of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Stand your ground. I have glued my hooves to the argument.",
+      "I chose this hill to die on. It is a fucking speed bump."
+    ],
+    "image": "assets/tarot/card-28.png"
+  },
+  {
+    "index": 29,
+    "title": "EIGHT OF SPITE",
+    "traditional": "Eight of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Things move quickly. I have accidentally replied to all.",
+      "Everything is delayed. Even my rage is awaiting dispatch."
+    ],
+    "image": "assets/tarot/card-29.png"
+  },
+  {
+    "index": 30,
+    "title": "NINE OF SPITE",
+    "traditional": "Nine of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Battle-scarred and still standing. The chair broke hours ago.",
+      "My last line of defence is a note saying please."
+    ],
+    "image": "assets/tarot/card-30.png"
+  },
+  {
+    "index": 31,
+    "title": "TEN OF SPITE",
+    "traditional": "Ten of Wands",
+    "family": "SPITE",
+    "readings": [
+      "I carry every burden. Four arms were an administrative mistake.",
+      "I put the burden down. It has asked for a lift home."
+    ],
+    "image": "assets/tarot/card-31.png"
+  },
+  {
+    "index": 32,
+    "title": "PAGE OF SPITE",
+    "traditional": "Page of Wands",
+    "family": "SPITE",
+    "readings": [
+      "An eager apprentice. I have given the fire a little name.",
+      "Enthusiasm remains high. So does the smoke alarm."
+    ],
+    "image": "assets/tarot/card-32.png"
+  },
+  {
+    "index": 33,
+    "title": "KNIGHT OF SPITE",
+    "traditional": "Knight of Wands",
+    "family": "SPITE",
+    "readings": [
+      "I charge toward glory. Glory has asked reception to say it is out.",
+      "All thrust, no map. I have conquered the same roundabout twice."
+    ],
+    "image": "assets/tarot/card-33.png"
+  },
+  {
+    "index": 34,
+    "title": "QUEEN OF SPITE",
+    "traditional": "Queen of Wands",
+    "family": "SPITE",
+    "readings": [
+      "Warmth. Confidence. A deeply personal relationship with the flamethrower.",
+      "My charisma has become a small contained fire."
+    ],
+    "image": "assets/tarot/card-34.png"
+  },
+  {
+    "index": 35,
+    "title": "KING OF SPITE",
+    "traditional": "King of Wands",
+    "family": "SPITE",
+    "readings": [
+      "A bold leader sees the future. Mine contains a disciplinary hearing.",
+      "I demanded loyalty. The chair has joined the opposition."
+    ],
+    "image": "assets/tarot/card-35.png"
+  },
+  {
+    "index": 36,
+    "title": "ACE OF POOR DECISIONS",
+    "traditional": "Ace of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "My cup overflows. The carpet is having a spiritual experience.",
+      "Emotionally empty. Physically full of gas-station coffee."
+    ],
+    "image": "assets/tarot/card-36.png"
+  },
+  {
+    "index": 37,
+    "title": "TWO OF POOR DECISIONS",
+    "traditional": "Two of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "A beautiful connection. We share a charger and several warning signs.",
+      "Two cups. One sink. This is how the war began."
+    ],
+    "image": "assets/tarot/card-37.png"
+  },
+  {
+    "index": 38,
+    "title": "THREE OF POOR DECISIONS",
+    "traditional": "Three of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "Good friends raise a glass. Bad friends have brought a second horse.",
+      "The group chat has formed a smaller group chat."
+    ],
+    "image": "assets/tarot/card-38.png"
+  },
+  {
+    "index": 39,
+    "title": "FOUR OF POOR DECISIONS",
+    "traditional": "Four of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "The universe offers a gift. I have asked for the receipt.",
+      "I finally noticed the opportunity. It was eating my sandwich."
+    ],
+    "image": "assets/tarot/card-39.png"
+  },
+  {
+    "index": 40,
+    "title": "FIVE OF POOR DECISIONS",
+    "traditional": "Five of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "Three cups spilled. Two remain. I am grieving the carpet.",
+      "I stopped crying over spilt milk. The milk has started crying back."
+    ],
+    "image": "assets/tarot/card-40.png"
+  },
+  {
+    "index": 41,
+    "title": "SIX OF POOR DECISIONS",
+    "traditional": "Six of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "A tender memory returns. It still owes me twenty quid.",
+      "The good old days have been checked. They were also bollocks."
+    ],
+    "image": "assets/tarot/card-41.png"
+  },
+  {
+    "index": 42,
+    "title": "SEVEN OF POOR DECISIONS",
+    "traditional": "Seven of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "So many possibilities. Every cup contains a smaller, angrier horse.",
+      "The illusion lifts. I have ordered seven identical problems."
+    ],
+    "image": "assets/tarot/card-42.png"
+  },
+  {
+    "index": 43,
+    "title": "EIGHT OF POOR DECISIONS",
+    "traditional": "Eight of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "I leave what no longer serves me. The buffet has filed an appeal.",
+      "I came back for closure. And the little cheese cubes."
+    ],
+    "image": "assets/tarot/card-43.png"
+  },
+  {
+    "index": 44,
+    "title": "NINE OF POOR DECISIONS",
+    "traditional": "Nine of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "A wish fulfilled. I should have specified a quiet horse.",
+      "I got everything I wanted. What an appalling clerical error."
+    ],
+    "image": "assets/tarot/card-44.png"
+  },
+  {
+    "index": 45,
+    "title": "TEN OF POOR DECISIONS",
+    "traditional": "Ten of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "Domestic bliss. We have agreed whose turn it is to be the problem.",
+      "The happy family portrait has requested separate frames."
+    ],
+    "image": "assets/tarot/card-45.png"
+  },
+  {
+    "index": 46,
+    "title": "PAGE OF POOR DECISIONS",
+    "traditional": "Page of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "A message from the heart. It has hoofprints and no return address.",
+      "I expressed my feelings. The fish in the cup has called a solicitor."
+    ],
+    "image": "assets/tarot/card-46.png"
+  },
+  {
+    "index": 47,
+    "title": "KNIGHT OF POOR DECISIONS",
+    "traditional": "Knight of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "A romantic approaches. The white horse is me and I object.",
+      "Swept off my feet. Mostly because I tripped over the grand gesture."
+    ],
+    "image": "assets/tarot/card-47.png"
+  },
+  {
+    "index": 48,
+    "title": "QUEEN OF POOR DECISIONS",
+    "traditional": "Queen of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "I hold space for your feelings. They are leaking through the bucket.",
+      "My intuition says no. My mouth has already invited them to stay."
+    ],
+    "image": "assets/tarot/card-48.png"
+  },
+  {
+    "index": 49,
+    "title": "KING OF POOR DECISIONS",
+    "traditional": "King of Cups",
+    "family": "POOR DECISIONS",
+    "readings": [
+      "Calm above the storm. Under the table I am biting a spoon.",
+      "Emotional mastery has been postponed until after my little tantrum."
+    ],
+    "image": "assets/tarot/card-49.png"
+  },
+  {
+    "index": 50,
+    "title": "ACE OF GRUDGES",
+    "traditional": "Ace of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A moment of clarity. Unfortunately everyone heard me say it.",
+      "My razor-sharp argument has cut through my own trousers."
+    ],
+    "image": "assets/tarot/card-50.png"
+  },
+  {
+    "index": 51,
+    "title": "TWO OF GRUDGES",
+    "traditional": "Two of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A difficult choice. I have blindfolded myself to improve the process.",
+      "I refused to choose. Both problems have moved in."
+    ],
+    "image": "assets/tarot/card-51.png"
+  },
+  {
+    "index": 52,
+    "title": "THREE OF GRUDGES",
+    "traditional": "Three of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A broken heart. Three swords. Bit fucking excessive, honestly.",
+      "Healing begins. I have stopped using the heartbreak as a coat rack."
+    ],
+    "image": "assets/tarot/card-52.png"
+  },
+  {
+    "index": 53,
+    "title": "FOUR OF GRUDGES",
+    "traditional": "Four of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "Rest is necessary. I am lying down with professional intent.",
+      "I rested my case. The case has developed insomnia."
+    ],
+    "image": "assets/tarot/card-53.png"
+  },
+  {
+    "index": 54,
+    "title": "FIVE OF GRUDGES",
+    "traditional": "Five of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "I won the argument. Everyone has gone home without me.",
+      "I offered an olive branch. It still had a pointy bit."
+    ],
+    "image": "assets/tarot/card-54.png"
+  },
+  {
+    "index": 55,
+    "title": "SIX OF GRUDGES",
+    "traditional": "Six of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A quieter shore awaits. I have packed the trauma in a waterproof bag.",
+      "We crossed troubled waters. I brought a bottle of them back."
+    ],
+    "image": "assets/tarot/card-55.png"
+  },
+  {
+    "index": 56,
+    "title": "SEVEN OF GRUDGES",
+    "traditional": "Seven of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A cunning plan. I have stolen my own keys as a distraction.",
+      "Caught red-hoofed. The alibi is also a horse."
+    ],
+    "image": "assets/tarot/card-56.png"
+  },
+  {
+    "index": 57,
+    "title": "EIGHT OF GRUDGES",
+    "traditional": "Eight of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "I am trapped by my thoughts. They have terrible taste in wallpaper.",
+      "The door was open. I have filed a complaint against my imagination."
+    ],
+    "image": "assets/tarot/card-57.png"
+  },
+  {
+    "index": 58,
+    "title": "NINE OF GRUDGES",
+    "traditional": "Nine of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "Three in the morning. My brain is rehearsing a conversation from 2009.",
+      "The nightmare is ending. Please do not give it my forwarding address."
+    ],
+    "image": "assets/tarot/card-58.png"
+  },
+  {
+    "index": 59,
+    "title": "TEN OF GRUDGES",
+    "traditional": "Ten of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "Rock bottom. At least the view has stopped getting worse.",
+      "I got back up. The floor has taken this personally."
+    ],
+    "image": "assets/tarot/card-59.png"
+  },
+  {
+    "index": 60,
+    "title": "PAGE OF GRUDGES",
+    "traditional": "Page of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "A sharp young mind. Unfortunately attached to my fucking mouth.",
+      "I did my research. It was one furious pigeon."
+    ],
+    "image": "assets/tarot/card-60.png"
+  },
+  {
+    "index": 61,
+    "title": "KNIGHT OF GRUDGES",
+    "traditional": "Knight of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "I rush to defend the truth. The truth has asked me to slow down.",
+      "My argument arrived before my facts. It has started a fight."
+    ],
+    "image": "assets/tarot/card-61.png"
+  },
+  {
+    "index": 62,
+    "title": "QUEEN OF GRUDGES",
+    "traditional": "Queen of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "Clear boundaries. The moat is a useful visual aid.",
+      "I cut out the nonsense. There is very little horse left."
+    ],
+    "image": "assets/tarot/card-62.png"
+  },
+  {
+    "index": 63,
+    "title": "KING OF GRUDGES",
+    "traditional": "King of Swords",
+    "family": "GRUDGES",
+    "readings": [
+      "Reason rules. I have appointed a brick as an independent adviser.",
+      "Absolute certainty. Absolutely no supporting paperwork."
+    ],
+    "image": "assets/tarot/card-63.png"
+  },
+  {
+    "index": 64,
+    "title": "ACE OF DEBT",
+    "traditional": "Ace of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "A golden opportunity. It has a small monthly service charge.",
+      "I planted a coin. The garden now has a landlord."
+    ],
+    "image": "assets/tarot/card-64.png"
+  },
+  {
+    "index": 65,
+    "title": "TWO OF DEBT",
+    "traditional": "Two of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "I balance my resources. Both are sugar cubes and one is imaginary.",
+      "The juggling has stopped. The bills are still airborne."
+    ],
+    "image": "assets/tarot/card-65.png"
+  },
+  {
+    "index": 66,
+    "title": "THREE OF DEBT",
+    "traditional": "Three of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Skilled teamwork. One horse builds, two horses hold the complaint.",
+      "We followed the blueprint. It was a napkin with a horse on it."
+    ],
+    "image": "assets/tarot/card-66.png"
+  },
+  {
+    "index": 67,
+    "title": "FOUR OF DEBT",
+    "traditional": "Four of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "I protect my savings. Nobody is touching my emergency biscuit.",
+      "I loosened my grip. The biscuit has entered the free market."
+    ],
+    "image": "assets/tarot/card-67.png"
+  },
+  {
+    "index": 68,
+    "title": "FIVE OF DEBT",
+    "traditional": "Five of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Hard times. Even my imaginary money has a second job.",
+      "Help is available. I have reluctantly stopped insulting the helper."
+    ],
+    "image": "assets/tarot/card-68.png"
+  },
+  {
+    "index": 69,
+    "title": "SIX OF DEBT",
+    "traditional": "Six of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Give generously. I have donated an entire opinion.",
+      "The gift had strings attached. I am now a marionette."
+    ],
+    "image": "assets/tarot/card-69.png"
+  },
+  {
+    "index": 70,
+    "title": "SEVEN OF DEBT",
+    "traditional": "Seven of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Patience bears fruit. Mine appears to be a threatening little lemon.",
+      "I dug up the seeds to check. They have requested privacy."
+    ],
+    "image": "assets/tarot/card-70.png"
+  },
+  {
+    "index": 71,
+    "title": "EIGHT OF DEBT",
+    "traditional": "Eight of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Practise the craft. My hundredth horseshoe looks almost intentional.",
+      "I perfected the wrong skill. Witness my immaculate procrastination."
+    ],
+    "image": "assets/tarot/card-71.png"
+  },
+  {
+    "index": 72,
+    "title": "NINE OF DEBT",
+    "traditional": "Nine of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Luxury earned. I am eating hay from the unnecessarily good bowl.",
+      "The finer things in life have arrived with a repossession notice."
+    ],
+    "image": "assets/tarot/card-72.png"
+  },
+  {
+    "index": 73,
+    "title": "TEN OF DEBT",
+    "traditional": "Ten of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "A lasting legacy. Generations will inherit my unfinished projects.",
+      "The family fortune was three buttons and a very confident envelope."
+    ],
+    "image": "assets/tarot/card-73.png"
+  },
+  {
+    "index": 74,
+    "title": "PAGE OF DEBT",
+    "traditional": "Page of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "A practical student. I have brought a notebook and an edible pencil.",
+      "Lesson one: stop eating the school supplies."
+    ],
+    "image": "assets/tarot/card-74.png"
+  },
+  {
+    "index": 75,
+    "title": "KNIGHT OF DEBT",
+    "traditional": "Knight of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Slow, steady progress. The horse has a spreadsheet and a flask.",
+      "Reliable as ever. Still reliably standing in the fucking way."
+    ],
+    "image": "assets/tarot/card-75.png"
+  },
+  {
+    "index": 76,
+    "title": "QUEEN OF DEBT",
+    "traditional": "Queen of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "A generous home. There is soup, a blanket, and a horse in the soup.",
+      "I cared for everyone. Someone please water the caretaker."
+    ],
+    "image": "assets/tarot/card-76.png"
+  },
+  {
+    "index": 77,
+    "title": "KING OF DEBT",
+    "traditional": "King of Pentacles",
+    "family": "DEBT",
+    "readings": [
+      "Material success. My emotional support brick now has a conservatory.",
+      "I own the whole stable. The stable owns every waking thought."
+    ],
+    "image": "assets/tarot/card-77.png"
+  }
+]
