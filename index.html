@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Small device. God complex. Install KEY-HORSE on your PaperMono: books, NFC, voice notes, LoRa messages, and one spectacularly unqualified horse."
+      content="Install KEY-HORSE on M5Stack PaperMono C153: TXT books, NFC tools, voice notes, Meshtastic messages and 78 cards of unsolicited horse advice."
     />
     <meta name="theme-color" content="#f5f4ef" />
-    <title>KEY-HORSE — PaperMono flasher</title>
+    <title>KEY-HORSE — Install on PaperMono</title>
     <link rel="icon" href="assets/horse.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="app.js"></script>
@@ -37,8 +37,8 @@
             </p>
             <h1 id="title">Small device.<br /><em>God complex.</em></h1>
             <p class="dek">
-              Books. NFC. Voice notes. LoRa messages.<br />
-              Supervised by a horse with no business supervising a fucking thing.
+              Books. NFC. Voice notes. Meshtastic messages.<br />
+              Four hands. Not one qualified to supervise a fucking thing.
             </p>
             <div class="horse-scene">
               <img
@@ -56,9 +56,9 @@
               </div>
             </div>
             <p class="feature-line">
-              <span>TXT READER</span><span>NFC TOOLS</span><span>VOICE LOG</span><span>LORA MESH</span>
+              <span>TXT BOOKS</span><span>NFC TOOLS</span><span>VOICE LOG</span><span>LORA MESH</span><span>WI-FI + BLE</span><span>BLUES HID</span><span>78-CARD TAROT</span>
             </p>
-            <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. Just an increasingly entitled horse.</p>
+            <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. No streak threats. The horse eats when you read and minds his own damn business when you don't.</p>
           </section>
 
           <section
@@ -72,7 +72,7 @@
             </div>
             <h2 id="install-title">Let the bastard in.</h2>
             <p class="card-intro">
-              Install or update KEY-HORSE over USB.<br />
+              Install or update KEY-HORSE on PaperMono C153 over USB.<br />
               Bring a data cable. The attitude is bundled.
             </p>
             <ol class="workflow" aria-label="Installation stages">
@@ -103,8 +103,9 @@
                 <div>
                   <strong>Plug in your PaperMono.</strong>
                   <p>
-                    Use desktop Chrome or Edge and a USB data cable. Close
-                    serial monitors and other flashers.
+                    Open this page in desktop Chrome or Edge. Connect a USB
+                    data cable and close serial monitors, M5Burner and other
+                    flasher tabs.
                   </p>
                 </div>
               </li>
@@ -123,8 +124,9 @@
                 <div>
                   <strong>Connect, then install.</strong>
                   <p>
-                    Select the PaperMono USB port. Keep the cable connected
-                    until verification finishes.
+                    Choose <strong>Connect PaperMono</strong> and select its USB
+                    port. Once connected, choose <strong>Install KEY-HORSE</strong>.
+                    Keep this page open and the cable connected until verification finishes.
                   </p>
                 </div>
               </li>
@@ -137,8 +139,9 @@
               ></label
             >
             <p class="board-note" id="board-note">
-              PaperMono-Lite, Paper and PaperS3 need different firmware.
-              Connecting restarts the device.
+              Check the model on your board: PaperMono-Lite, Paper and PaperS3
+              need different firmware. Connecting restarts the device; writing
+              starts when you choose Install KEY-HORSE.
             </p>
             <button class="primary" id="connect" disabled>
               Connect PaperMono <span aria-hidden="true">↗</span>
@@ -156,7 +159,7 @@
               </div>
               <div class="status" role="status" aria-live="polite" aria-atomic="true">
                 <span class="status-dot" aria-hidden="true"></span
-                ><span id="status-text">Downloading and checking the firmware files…</span>
+                ><span id="status-text">Loading and checking the firmware files…</span>
               </div>
               <progress
                 id="progress"
@@ -185,13 +188,13 @@
               <a id="next-link" href="#aftercare">Meet your new dependent ↗</a>
             </section>
             <p class="preserve">
-              Updates keep KEY-HORSE settings and the device PIN.<br />Your
-              microSD files stay on the card.
+              Updates preserve KEY-HORSE settings, horse progress and your PIN.<br />
+              This installer does not access your microSD card.
             </p>
             <noscript
               ><p class="error">
-                Enable JavaScript to use the USB flasher. The setup notes below
-                remain available.
+                Enable JavaScript to use the USB flasher. You can still read
+                the setup and recovery instructions on this page.
               </p></noscript
             >
           </section>
@@ -205,21 +208,24 @@
             </h2>
             <div>
               <span class="number">01 / READ</span>
-              <h3>Your attention span pays rent.</h3>
+              <h3>Turn the reading pile into lunch.</h3>
               <p>
                 Put UTF-8 .txt books in <code>/books</code> on a microSD card.
-                Open <strong>READ → Books</strong>. Built-in samples are ready
-                without a card. Reading earns horse food. Finally, a dependent
-                you can support by ignoring everyone else.
+                Open <strong>READ → Books</strong>, or start with a built-in
+                sample without a card. Fresh reading earns food; tap the horse's
+                stats to feed him in <strong>MY HORSE</strong>. He calls this a
+                literary partnership. You are paying for both lunches.
               </p>
             </div>
             <div>
               <span class="number">02 / EXPLORE</span>
-              <h3>A very employable rectangle.</h3>
+              <h3>The rectangle has other commitments.</h3>
               <p>
-                Read NFC tags, record a passing thought, or configure the
-                onboard LoRa messenger. Start from <strong>WRITE</strong> and
-                <strong>READ</strong>. The horse offers storage, not absolution.
+                Explore NFC tools, voice notes and Meshtastic messages from
+                <strong>WRITE</strong> and <strong>READ</strong>. Recordings and
+                saved tags need a microSD card. Set your LoRa region and channel
+                before messaging. <strong>READ → Tarot</strong> deals 78 illustrated
+                cards. Apparently four hands weren't enough ways to give bad advice.
               </p>
             </div>
           </div>
@@ -230,7 +236,7 @@
             <p class="eyebrow">TECHNICAL SUPPORT / NO EXORCIST ON STAFF</p>
             <h2 id="help-title">Shit's not working.</h2>
             <p>
-              A diagnosis first. A small breakdown later.<br />
+              The log keeps the facts. I supply the commentary.<br />
               Let's start with the cable.
             </p>
           </div>
@@ -238,9 +244,8 @@
             <details>
               <summary>My PaperMono doesn't appear.</summary>
               <p>
-                Try a USB data cable; some cables only supply power. A charging
-                cable with career ambitions is still a charging cable. Close
-                serial monitors, M5Burner and other flasher tabs. Hold the power
+                Use a USB data cable; a charging-only cable cannot carry firmware.
+                Close serial monitors, M5Burner and other flasher tabs. Hold the power
                 button for about 2 seconds until the red LED blinks, release it,
                 then choose Connect PaperMono again.
                 <a href="https://docs.m5stack.com/en/core/PaperMono"
@@ -249,11 +254,12 @@
               </p>
             </details>
             <details>
-              <summary>Will this erase my books or settings?</summary>
+              <summary>What happens to my books, horse and PIN?</summary>
               <p>
                 This installer writes four firmware segments and does not erase
-                the whole chip. It preserves KEY-HORSE's NVS settings, including
-                your PIN, and never accesses the microSD card. A first install
+                the whole chip. It preserves KEY-HORSE settings, horse progress
+                and your existing device PIN, and never accesses the microSD card.
+                An update does not remove a forgotten PIN. A first install
                 replaces the previous firmware; settings from other firmware may
                 not be compatible. Keep copies of files you value. The horse
                 is many things. A backup strategy is not one of them.
@@ -262,11 +268,17 @@
             <details id="recovery-help">
               <summary>The installation was interrupted.</summary>
               <p>
-                Some firmware bytes may already have been written. Check the
-                device and installation log before starting another attempt.
-                Restore the USB connection and enter download mode if recovery
-                is needed. The flasher never automatically repeats an
-                installation.
+                Some firmware bytes may already have been written. Choose
+                <strong>Save log</strong> before closing or reloading this page.
+                Check the device and the four segment results: <strong>Verified</strong>
+                means the device digest matched; <strong>Not verified</strong> means
+                the result is uncertain; <strong>Not written</strong> means that
+                segment was not reached.
+              </p>
+              <p>
+                If recovery is needed, restore the USB connection, enter download
+                mode, then reload this page to begin a new attempt. The flasher
+                never automatically repeats an installation.
               </p>
             </details>
             <details id="restart-help">
@@ -274,12 +286,13 @@
                 It says verified, but the screen hasn't changed.
               </summary>
               <p>
-                The e-paper panel retains its image without power. After
-                verification, let the device restart and give the first refresh
-                a moment. The screen can display yesterday's bullshit without
-                a single electron of enthusiasm. If needed, briefly press the power button to restart.
-                Verification checks flash bytes; check the screen, touch and NFC
-                on the device separately.
+                The e-paper panel retains its image without power, so an unchanged
+                picture does not tell you whether the new firmware is running.
+                After verification, wait for the first refresh. If needed, briefly
+                press the power button to restart, then unlock with your existing
+                PIN if one is set. Check the screen, touch and NFC on the device;
+                flash verification checks the written bytes. E-paper can hold a
+                grudge with the battery out.
               </p>
             </details>
             <details>
@@ -305,10 +318,12 @@
           <pre id="log" tabindex="0" aria-label="Installation log">
 No device connected.</pre>
           <p class="technical-note">
-            Downloads are checked with SHA-256 before connecting. Each written
-            segment is checked against the device's MD5 digest. USB chip
-            detection cannot distinguish PaperMono from every other ESP32-S3
-            board; confirm the model above.
+            All four firmware files are checked with SHA-256 before USB access.
+            The installer checks for ESP32-S3 and 16 MB flash before writing,
+            then verifies each segment against the device's MD5 digest. Chip
+            detection cannot identify the exact board model; confirm PaperMono
+            C153 yourself. Verification confirms the bytes, not the display,
+            touch or NFC behavior.
             <a href="licenses.txt">Open-source notices</a>.
           </p>
         </details>

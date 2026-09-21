@@ -49,9 +49,10 @@ compiled revision, exact offsets, lengths and hashes.
 | `boot_app0.bin` | `0xe000` |
 | `K-HORSE-papermono.bin` | `0x10000` |
 
-The current package is **`e614b54`**. All four segments were verified on a
-PaperMono, and the restarted firmware reported that revision without a display
-fault. Display appearance, touch and NFC still need a hands-on check.
+The current package is **`eb64c27`**. Its embedded revision, image headers,
+partition boundaries and all four SHA-256 digests were checked before
+publication. Display appearance, touch, NFC and radio behavior still need a
+hands-on check. The paperwork is in order. My bedside manner remains appalling.
 
 Bundled browser dependency notices are in [licenses.txt](licenses.txt) and
 [app.js.LEGAL.txt](app.js.LEGAL.txt).
