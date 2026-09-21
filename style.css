@@ -1,13 +1,13 @@
 :root {
   color-scheme: light;
-  --paper: #f3f1e9;
-  --ink: #22241e;
-  --muted: #5f6157;
-  --rule: #c8c8ba;
-  --white: #fffef9;
-  --wash: #e8e7dc;
-  --success: #435430;
-  --error: #982d23;
+  --paper: #ffffff;
+  --ink: #111111;
+  --muted: #595959;
+  --rule: #d6d6d6;
+  --white: #ffffff;
+  --wash: #f4f4f4;
+  --success: #111111;
+  --error: #111111;
   --mono: "Courier New", monospace;
   --serif: Georgia, "Times New Roman", serif;
   font-family: Arial, Helvetica, sans-serif;
@@ -50,16 +50,16 @@ input:focus-visible,
 pre:focus-visible,
 .installation-state:focus-visible,
 [tabindex="-1"]:focus-visible {
-  outline: 3px solid #657c3e;
+  outline: 3px solid #111111;
   outline-offset: 5px;
 }
 [hidden] {
   display: none !important;
 }
 .page {
-  max-width: 1360px;
+  max-width: 1328px;
   margin: auto;
-  padding: 0 56px;
+  padding: 0 48px;
 }
 .skip {
   position: absolute;
@@ -77,27 +77,19 @@ pre:focus-visible,
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  padding: 30px 0 24px;
-  border-bottom: 4px solid var(--ink);
+  padding: 24px 0;
+  border-bottom: 1px solid var(--ink);
 }
 .wordmark {
-  font-family: var(--mono);
-  font-size: 38px;
-  font-weight: bold;
-  letter-spacing: -2.5px;
-  text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  font: bold 28px/1 var(--mono);
+  letter-spacing: -1.5px;
+  text-decoration: none;
 }
 .mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: normal;
   letter-spacing: 0;
 }
@@ -116,13 +108,10 @@ pre:focus-visible,
   text-decoration: none;
 }
 .masthead .nav-install {
-  padding-inline: 16px;
-  border: 1px solid var(--ink);
   font-weight: bold;
 }
 .masthead .nav-install:hover {
-  background: var(--ink);
-  color: var(--white);
+  text-decoration: underline;
 }
 .masthead nav a:hover {
   text-decoration: underline;
@@ -130,17 +119,17 @@ pre:focus-visible,
 .edition {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  font: 10px/1.5 var(--mono);
-  letter-spacing: 1px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--rule);
+  gap: 24px;
+  padding: 16px 0;
+  color: var(--muted);
+  font: 10px/1.6 var(--mono);
+  letter-spacing: 0.6px;
 }
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr);
-  gap: 60px;
-  padding: 40px 0 48px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 80px;
+  padding: 40px 0 64px;
   align-items: start;
 }
 .hero > * {
@@ -153,7 +142,7 @@ pre:focus-visible,
   margin: 0;
 }
 .intro {
-  padding-block: 34px 16px;
+  padding-top: 40px;
 }
 .intro > .eyebrow {
   display: flex;
@@ -167,18 +156,17 @@ pre:focus-visible,
   flex: none;
 }
 h1 {
-  font-size: clamp(58px, 7.3vw, 98px);
-  font-weight: 700;
-  line-height: 0.98;
-  letter-spacing: -5px;
-  margin: 32px 0;
+  font-size: clamp(58px, 6.8vw, 92px);
+  line-height: 1;
+  letter-spacing: -4.5px;
+  margin: 28px 0;
 }
 em {
   font-family: var(--serif);
   font-weight: normal;
 }
 h1 em {
-  font-size: 1.08em;
+  font-size: 1.04em;
 }
 .dek {
   font-size: 21px;
@@ -202,9 +190,8 @@ h1 em {
 }
 .hero-actions .primary {
   width: auto;
-  gap: 26px;
+  gap: 32px;
   text-decoration: none;
-  box-shadow: 4px 4px 0 var(--rule);
 }
 .text-link {
   border: 0;
@@ -218,59 +205,36 @@ h1 em {
 }
 .tarot-stage {
   min-width: 0;
-  scroll-margin-top: 20px;
-  padding: 24px;
-  border: 1px solid var(--ink);
-  background: var(--wash);
-  box-shadow: 5px 5px 0 var(--rule);
+  scroll-margin-top: 24px;
 }
 .tarot-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 6px 12px;
-  padding: 14px 24px;
-  margin: -24px -24px 0;
-  background: var(--ink);
-  color: var(--white);
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--ink);
 }
 .deck-stamp {
   font: 10px/1.6 var(--mono);
+  color: var(--muted);
 }
 .tarot-kicker {
   text-align: center;
-  font-size: 9px;
-  line-height: 1.6;
-  margin-top: 20px;
+  font-size: 10px;
   color: var(--muted);
+  margin: 20px 0 12px;
 }
 .tarot-spread {
-  position: relative;
   display: grid;
   place-items: center;
-  margin: 12px 0 20px;
-  padding: 14px 0 12px;
-  isolation: isolate;
+  margin: 24px 0;
 }
-.tarot-spread::before {
-  content: "";
-  position: absolute;
-  width: 74%;
-  max-width: 330px;
-  aspect-ratio: 1;
-  border: 1px solid var(--rule);
-  border-radius: 50%;
-  box-shadow: 0 0 0 12px var(--wash), 0 0 0 13px var(--rule);
-  z-index: -1;
-  pointer-events: none;
-}
+
 .tarot-spread figure {
   background: var(--white);
   border: 1px solid var(--ink);
-  outline: 1px solid var(--rule);
-  outline-offset: -6px;
-  padding: 14px;
+  padding: 16px;
   margin: 0;
   text-align: center;
 }
@@ -279,53 +243,28 @@ h1 em {
   width: 100%;
   height: auto;
   image-rendering: pixelated;
-  mix-blend-mode: multiply;
 }
 .tarot-card {
-  position: relative;
-  z-index: 1;
-  width: 66%;
+  width: 100%;
   max-width: 280px;
-  box-shadow: 4px 5px 0 var(--ink);
 }
-.tarot-card > p,
-.flank-card > span {
-  display: block;
-  font: 9px/1.5 var(--mono);
-  letter-spacing: 1px;
+.tarot-card > p {
+  font: 10px/1.5 var(--mono);
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 .tarot-card h2 {
-  font: bold 13px/1.35 var(--mono);
-  letter-spacing: -0.3px;
-  margin: 10px 0 2px;
-  height: 4.05em;
   display: grid;
   align-items: center;
-}
-.flank-card {
-  position: absolute;
-  width: 44%;
-  top: 17%;
-}
-.flank-card figcaption {
-  font: bold 10px/1.4 var(--mono);
-  margin-top: 10px;
-}
-.flank-left {
-  left: 3%;
-  transform: rotate(-10deg);
-}
-.flank-right {
-  right: 3%;
-  transform: rotate(10deg);
+  min-height: 3.9em;
+  font: bold 13px/1.3 var(--mono);
+  margin: 12px 0 0;
 }
 .oracle-copy {
+  margin-top: 24px;
+  padding-top: 20px;
   border-top: 1px solid var(--rule);
-  padding: 18px 24px 0;
-  margin-top: 18px;
-  margin-inline: -24px;
 }
 .reading-meta {
   display: flex;
@@ -337,24 +276,20 @@ h1 em {
 }
 .reading-meta span:last-child {
   font-weight: bold;
-  letter-spacing: 0.7px;
   flex: none;
-  border: 1px solid var(--muted);
-  padding: 2px 6px;
-  margin-top: -3px;
 }
 .oracle-copy blockquote {
-  font: italic 23px/1.4 var(--serif);
+  font: italic 22px/1.5 var(--serif);
   margin: 12px 0 0;
-  min-height: 4.2em;
+  min-height: 4.5em;
   text-wrap: pretty;
 }
 .oracle-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px 12px;
+  justify-content: center;
+  gap: 8px 24px;
 }
 .draw-card {
   border: 1px solid var(--ink);
@@ -373,16 +308,14 @@ h1 em {
 }
 .deck-count {
   color: var(--muted);
-  font: 10px/1.6 var(--mono);
+  font: 10px/1.7 var(--mono);
   margin: 16px 0 0;
-  padding-top: 12px;
-  border-top: 1px dashed var(--rule);
 }
 .install-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 72px;
-  padding-block: 72px 80px;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 80px;
+  padding: 80px 0;
   align-items: start;
 }
 .install-section > * {
@@ -392,11 +325,10 @@ h1 em {
   padding-top: 4px;
 }
 .install-aside h2 {
-  font-size: clamp(34px, 3.8vw, 50px);
-  line-height: 1.08;
-  letter-spacing: -1.8px;
-  margin: 28px 0;
-  text-wrap: balance;
+  font-size: clamp(34px, 3.6vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1.6px;
+  margin: 24px 0;
 }
 .install-aside > p:not(.eyebrow) {
   font-size: 15px;
@@ -409,7 +341,7 @@ h1 em {
 }
 .install-kit {
   margin: 32px 0 0;
-  border-top: 2px solid var(--ink);
+  border-top: 1px solid var(--ink);
 }
 .install-kit > div {
   display: grid;
@@ -436,29 +368,16 @@ h1 em {
   font-size: 12px;
   font-weight: normal;
 }
-.horse-scene {
-  display: grid;
-  grid-template-columns: 112px minmax(0, 1fr);
-  align-items: center;
-  gap: 18px;
-  margin: 32px 0 20px;
-  padding: 20px 16px;
-  border: 1px solid var(--rule);
-  background: var(--wash);
+.horse-commentary {
+  margin: 32px 0 24px;
+  padding-left: 20px;
+  border-left: 1px solid var(--ink);
 }
-.horse-scene img {
-  width: 112px;
-  height: 112px;
-  image-rendering: pixelated;
-  mix-blend-mode: multiply;
-  flex: none;
-}
-.horse-scene blockquote {
-  font:
-    italic 21px/1.35 Georgia,
-    serif;
-  margin: 16px 0 12px;
-  min-height: 4.1em;
+
+.horse-commentary blockquote {
+  font: italic 20px/1.5 var(--serif);
+  margin: 12px 0 4px;
+  min-height: 4.5em;
   text-wrap: pretty;
 }
 .horse-commentary .eyebrow {
@@ -488,38 +407,31 @@ h1 em {
 }
 .inventory {
   display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  align-items: stretch;
-  border: 1px solid var(--ink);
+  grid-template-columns: 172px minmax(0, 1fr);
+  align-items: center;
+  border-block: 1px solid var(--rule);
+  padding: 8px 0;
 }
 .inventory > .eyebrow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  color: var(--white);
-  background: var(--ink);
-  padding: 18px;
+  color: var(--muted);
+  font-size: 10px;
 }
 .feature-line {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  font: bold 11px/1.6 var(--mono);
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  font: 11px/1.5 var(--mono);
 }
-.feature-line li + li {
-  border-left: 1px solid var(--rule);
-}
+
 .feature-line a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  min-height: 64px;
-  height: 100%;
-  padding: 14px;
+  min-height: 48px;
+  padding: 8px 10px;
   text-decoration: none;
 }
 .feature-line a span {
@@ -529,11 +441,9 @@ h1 em {
   background: var(--wash);
 }
 .margin-note {
-  font: 11px/1.6 var(--mono);
+  font: 11px/1.7 var(--mono);
   max-width: 40em;
   margin: 0;
-  padding: 4px 0 4px 16px;
-  border-left: 2px solid var(--ink);
   color: var(--muted);
 }
 .margin-note span {
@@ -541,32 +451,29 @@ h1 em {
 }
 .installer {
   --panel-gutter: 32px;
-  border: 2px solid var(--ink);
+  padding: 28px var(--panel-gutter);
+  border: 1px solid var(--ink);
   background: var(--white);
-  padding: 0 var(--panel-gutter) 28px;
-  box-shadow: 7px 7px 0 var(--rule);
   scroll-margin-top: 24px;
 }
 .card-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-inline: calc(-1 * var(--panel-gutter));
-  padding: 14px var(--panel-gutter);
-  background: var(--ink);
-  color: var(--white);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
 }
 .tag {
-  font: bold 9px/1.5 var(--mono);
-  letter-spacing: 0.3px;
-  border: 1px solid currentColor;
-  padding: 5px 8px;
+  font: 10px/1.5 var(--mono);
+  color: var(--muted);
 }
 .installer h2 {
-  font: normal clamp(32px, 3.5vw, 46px)/1.1 var(--serif);
-  letter-spacing: -1.5px;
-  margin: 28px 0 12px;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.15;
+  letter-spacing: -1.4px;
+  margin: 24px 0 12px;
 }
 .card-intro {
   color: var(--muted);
@@ -588,14 +495,11 @@ h1 em {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  padding: 14px;
-  border: 1px solid var(--rule);
-  border-bottom-width: 3px;
+  padding: 12px 8px;
+  border-bottom: 2px solid var(--rule);
   color: var(--muted);
 }
-.workflow li + li {
-  border-left: 0;
-}
+
 .workflow li > span {
   position: relative;
   display: inline-grid;
@@ -741,20 +645,19 @@ h1 em {
 .board-check {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 14px;
   line-height: 1.5;
   cursor: pointer;
   padding: 16px;
-  border: 1px solid var(--rule);
-  background: var(--paper);
+  border: 1px solid #767676;
 }
 .board-check:has(input:checked) {
   border-color: var(--ink);
   background: var(--wash);
 }
 .board-check:has(input:focus-visible) {
-  outline: 3px solid #657c3e;
+  outline: 3px solid #111111;
   outline-offset: 4px;
 }
 .board-check:has(input:disabled) {
@@ -784,13 +687,13 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-height: 52px;
+  padding: 16px 20px;
+  border: 1px solid var(--ink);
   background: var(--ink);
   color: var(--white);
-  border: 1px solid var(--ink);
-  padding: 18px 20px;
   font-size: 14px;
   font-weight: bold;
-  min-height: 56px;
 }
 .primary span {
   font-size: 19px;
@@ -802,7 +705,7 @@ button:disabled {
   color: var(--muted);
 }
 .primary:not(:disabled):hover {
-  background: #45473f;
+  background: #333333;
 }
 .primary:not(:disabled):active {
   transform: translateY(1px);
@@ -820,11 +723,10 @@ button:disabled {
   min-height: 44px;
 }
 .installation-state {
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--ink);
-  margin-top: 18px;
-  padding: 18px;
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--wash);
+  border-left: 3px solid var(--ink);
   overflow-wrap: anywhere;
 }
 .status-heading {
@@ -853,12 +755,12 @@ button:disabled {
   color: var(--error);
 }
 .installation-state[data-state="error"] {
-  border-color: var(--error);
-  background: #fff3ee;
+  border: 2px solid var(--ink);
+  border-left-width: 6px;
 }
 .installation-state[data-state="done"] {
-  border-color: var(--success);
-  background: #edf0e7;
+  border: 1px solid var(--ink);
+  border-left-width: 6px;
 }
 .installation-state[data-state="ready"],
 .installation-state[data-state="selected"] {
@@ -1002,9 +904,7 @@ button:disabled {
   font-size: 12px;
   line-height: 1.65;
   color: var(--muted);
-  border-top: 1px dashed var(--rule);
-  padding-top: 14px;
-  margin: 17px 0 0;
+  margin: 20px 0 0;
 }
 progress {
   accent-color: var(--ink);
@@ -1027,8 +927,8 @@ progress::-moz-progress-bar {
   background: var(--ink);
 }
 .aftercare {
-  border-top: 4px solid var(--ink);
-  padding: 40px 0 64px;
+  padding: 56px 0 64px;
+  border-top: 1px solid var(--ink);
 }
 .section-heading {
   display: flex;
@@ -1039,25 +939,22 @@ progress::-moz-progress-bar {
 .aftercare-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 36px;
-  border-bottom: 1px solid var(--rule);
+  gap: 0 40px;
+  margin-top: 40px;
 }
 .aftercare-grid > div {
+  padding: 28px 0;
   border-top: 1px solid var(--rule);
-  padding: 28px;
-  scroll-margin-top: 28px;
+  scroll-margin-top: 24px;
 }
-.aftercare-grid > div:not(:nth-child(3n + 1)) {
-  border-left: 1px solid var(--rule);
-}
+
 .aftercare-grid > div:target {
-  background: var(--white);
-  box-shadow: inset 0 3px 0 var(--ink);
+  border-top-color: var(--ink);
 }
 .aftercare h2 {
-  font-size: 48px;
-  line-height: 1.06;
-  letter-spacing: -1.8px;
+  font-size: 44px;
+  line-height: 1.12;
+  letter-spacing: -1.6px;
   margin: 0;
 }
 .number {
@@ -1072,9 +969,11 @@ h3 {
   margin: 13px 0 9px;
 }
 .aftercare-grid h3 {
-  font: normal 26px/1.15 var(--serif);
-  letter-spacing: -0.6px;
-  margin: 20px 0 16px;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin: 16px 0 12px;
   text-wrap: balance;
 }
 .aftercare p:not(.eyebrow) {
@@ -1089,6 +988,7 @@ h3 {
   align-items: center;
   gap: 12px 24px;
   padding-top: 20px;
+  border-top: 1px solid var(--rule);
 }
 .return-to-install .text-link {
   flex: none;
@@ -1097,21 +997,21 @@ code {
   font-size: 0.96em;
 }
 .help {
-  border-top: 2px solid var(--ink);
-  padding: 36px;
-  background: var(--wash);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-  gap: 56px;
+  gap: 64px;
+  padding: 48px 0;
+  border-top: 1px solid var(--ink);
 }
 .help h2 {
-  font: normal 38px/1.1 var(--serif);
+  font-size: 36px;
+  line-height: 1.15;
   letter-spacing: -1.2px;
   margin: 20px 0;
 }
 .help > div > p:not(.eyebrow) {
-  font:
-    15px/1.65 var(--serif);
+  font-size: 14px;
+  line-height: 1.75;
   color: var(--muted);
 }
 details {
@@ -1167,7 +1067,8 @@ details[open] > summary:after {
 }
 .questions p a {
   display: block;
-  margin-top: 9px;
+  min-height: 44px;
+  padding-block: 10px;
 }
 .technical {
   margin-top: 28px;
@@ -1199,9 +1100,11 @@ details[open] > summary:after {
   min-width: 0;
 }
 .technical-grid h3 {
-  font: normal 26px/1.2 var(--serif);
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.2;
   letter-spacing: -0.5px;
-  margin: 12px 0 18px;
+  margin: 12px 0 20px;
 }
 .technical-grid .eyebrow {
   margin: 0;
@@ -1288,13 +1191,13 @@ pre {
   border: 1px solid var(--rule);
 }
 footer {
-  border-top: 4px solid var(--ink);
   display: flex;
   justify-content: space-between;
-  gap: 24px;
   align-items: center;
-  padding: 26px 0 36px;
-  font: 10px/1.7 var(--mono);
+  gap: 24px;
+  padding: 32px 0;
+  border-top: 1px solid var(--ink);
+  font: 11px/1.7 var(--mono);
 }
 footer strong {
   font-size: 22px;
@@ -1318,180 +1221,202 @@ footer a:hover {
   color: var(--error);
   font-size: 13px;
 }
-@media (max-width: 1000px) {
+
+/* Reading controls share the installer's monochrome focus and target sizes. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.tarot-modes {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.tarot-modes label {
+  position: relative;
+  cursor: pointer;
+}
+.tarot-modes input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.tarot-modes span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: 11px/1.5 var(--mono);
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+}
+.tarot-modes input:checked + span {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+  font-weight: bold;
+}
+.tarot-modes input:focus-visible {
+  outline: none;
+}
+.tarot-modes input:focus-visible + span {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.tarot-card img[data-reversed="true"] {
+  transform: rotate(180deg);
+}
+.spread-positions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.spread-positions button {
+  min-width: 0;
+  min-height: 84px;
+  padding: 12px 8px;
+  border: 1px solid #767676;
+  background: var(--white);
+  color: var(--ink);
+  text-align: left;
+}
+.spread-positions button[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+.spread-positions button:hover:not([aria-pressed="true"]) {
+  background: var(--wash);
+  border-color: var(--ink);
+}
+.spread-positions span {
+  display: block;
+  font: 10px/1.5 var(--mono);
+  margin-bottom: 8px;
+}
+.spread-positions strong {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.tarot-history {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+.tarot-history > span {
+  color: var(--muted);
+  font: 10px/1.5 var(--mono);
+}
+.text-link:disabled {
+  color: var(--muted);
+  text-decoration: none;
+}
+.segment-receipt [data-state="stopped"] strong::before {
+  content: "! ";
+}
+
+@media (max-width: 1100px) {
   .page {
     padding-inline: 32px;
   }
-  .hero {
-    gap: 32px;
+  .hero, .install-section {
+    gap: 40px;
   }
   h1 {
-    font-size: 7.4vw;
-    letter-spacing: -3.5px;
+    font-size: clamp(58px, 7vw, 78px);
+    letter-spacing: -3px;
   }
-  .inventory {
-    grid-template-columns: 1fr;
-  }
-  .inventory > .eyebrow {
-    padding: 10px 14px;
-  }
-  .feature-line {
-    font-size: 11px;
-  }
-  .oracle-actions {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0;
-  }
-  .oracle-actions .text-link {
-    justify-self: start;
-  }
-  .install-section {
-    gap: 40px;
+  .intro > .eyebrow {
+    font-size: 10px;
   }
   .installer {
     --panel-gutter: 24px;
   }
-  .horse-scene {
-    grid-template-columns: 80px minmax(0, 1fr);
-    gap: 14px;
+  .inventory {
+    grid-template-columns: 1fr;
+    padding-top: 16px;
+    gap: 8px;
   }
-  .horse-scene img {
-    width: 80px;
-    height: 80px;
+  .feature-line a {
+    padding-inline: 0;
+    padding-right: 16px;
   }
-  .horse-scene blockquote {
-    font-size: 20px;
-  }
-  .aftercare-grid > div {
-    padding: 24px;
-  }
-  .card-heading {
-    flex-wrap: wrap;
-  }
-  .intro > .eyebrow {
-    font-size: 9px;
-  }
-  .install-kit > div {
-    grid-template-columns: 80px minmax(0, 1fr);
+  .aftercare-grid {
+    gap: 0 24px;
   }
 }
 @media (max-width: 860px) {
   .page {
     padding-inline: 24px;
   }
-  .masthead {
-    padding: 24px 0 20px;
-  }
-  .wordmark {
-    font-size: 29px;
-  }
-  .masthead nav {
-    gap: 16px;
-  }
-  .edition {
-    font-size: 8px;
-    letter-spacing: 0.6px;
-  }
   .hero {
     grid-template-columns: 1fr;
-    padding: 28px 0 40px;
-    gap: 36px;
+    gap: 48px;
+    padding: 16px 0 48px;
   }
-  .feature-line {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    font-size: 12px;
+  .intro {
+    max-width: 620px;
+    padding-top: 16px;
   }
-  .feature-line li:nth-child(n + 4) {
-    border-top: 1px solid var(--rule);
-  }
-  .feature-line li:nth-child(3n + 1) {
-    border-left: 0;
-  }
-  .install-section {
-    grid-template-columns: 1fr;
-    padding-block: 44px 52px;
-    gap: 32px;
+  h1 {
+    font-size: clamp(58px, 10vw, 84px);
   }
   .tarot-stage {
     width: 100%;
     max-width: 560px;
     margin: auto;
   }
-  .tarot-card h2 {
-    font-size: 12px;
+  .install-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-block: 56px;
   }
-  .tarot-card > p {
-    font-size: 8px;
-    letter-spacing: 0;
+  .install-aside h2 br:last-child {
+    display: none;
   }
-  .flank-card > span,
-  .flank-card figcaption {
-    font-size: 8px;
-  }
-  .tarot-spread .flank-card {
-    padding: 10px;
-  }
-  .oracle-copy blockquote {
-    min-height: 4.2em;
-  }
-  .intro {
-    padding: 10px 0 0;
-    max-width: 620px;
-  }
-  h1 {
-    font-size: clamp(64px, 11.5vw, 92px);
-    letter-spacing: -3px;
-    margin-top: 23px;
-  }
-  .horse-scene {
-    display: grid;
-    grid-template-columns: 96px minmax(0, 1fr);
-    max-width: 560px;
-    margin: 24px 0;
-    gap: 18px;
-  }
-  .horse-scene img {
-    width: 96px;
-    height: 96px;
-  }
-  .horse-scene blockquote {
-    font-size: 20px;
+  .horse-commentary blockquote {
     min-height: 0;
   }
-  .oracle-actions {
-    display: flex;
-    gap: 8px 12px;
+  .feature-line {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .aftercare-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .aftercare-grid > div:not(:nth-child(3n + 1)) {
-    border-left: 0;
-  }
-  .aftercare-grid > div:nth-child(even) {
-    border-left: 1px solid var(--rule);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .help {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 28px;
+    gap: 20px;
   }
   .technical-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+  .receipt-note {
+    display: none;
+  }
   footer {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
-  }
-  .footer-byline {
-    display: block;
-    margin-top: 9px;
-  }
-  .receipt-note {
-    display: none;
+    gap: 12px;
   }
 }
 @media (max-width: 540px) {
@@ -1501,118 +1426,76 @@ footer a:hover {
   .masthead {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
-    padding: 24px 0 14px;
+    gap: 12px;
+    padding: 24px 0 12px;
   }
   .wordmark {
     width: 100%;
     justify-content: space-between;
-    font-size: 34px;
   }
   .masthead nav {
     width: 100%;
     justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
     font-size: 11px;
   }
-  .masthead nav a {
-    gap: 6px;
-  }
-  .masthead .nav-install {
-    padding-inline: 10px;
-  }
-  .edition span:last-child {
-    display: none;
+  .edition {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 9px;
   }
   h1 {
-    font-size: clamp(52px, 13.7vw, 72px);
-    letter-spacing: -3px;
-    margin-block: 26px;
+    font-size: clamp(48px, 12.8vw, 68px);
+    letter-spacing: -2.6px;
+    margin-block: 24px;
   }
   .dek {
     font-size: 19px;
   }
   .hero-actions {
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
   }
   .hero-actions .primary {
     width: 100%;
   }
-  .tarot-heading {
-    gap: 4px 10px;
-    padding: 12px 18px;
-    margin: -18px -18px 0;
+  .tarot-card {
+    max-width: 256px;
   }
-  .tarot-stage {
-    padding: 18px;
-    box-shadow: 3px 3px 0 var(--rule);
+  .tarot-heading .eyebrow {
+    font-size: 10px;
   }
-  .tarot-heading .eyebrow,
   .deck-stamp {
     font-size: 9px;
   }
-  .tarot-card {
-    width: 72%;
-  }
-  .tarot-spread {
-    margin-bottom: 18px;
-  }
-  .flank-card > span,
-  .flank-card figcaption {
-    visibility: hidden;
-  }
   .oracle-actions {
-    display: grid;
-    gap: 2px;
+    gap: 4px 16px;
   }
   .draw-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
   }
-  .oracle-actions .text-link {
-    justify-self: center;
+  .oracle-copy blockquote {
+    font-size: 21px;
   }
   .feature-line {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .feature-line li:nth-child(n + 3) {
-    border-top: 1px solid var(--rule);
-  }
-  .feature-line li:nth-child(odd) {
-    border-left: 0;
-  }
-  .feature-line li:nth-child(even) {
-    border-left: 1px solid var(--rule);
-  }
-  .feature-line a {
-    min-height: 52px;
-  }
-  .return-to-install {
-    flex-wrap: wrap;
-  }
-  .oracle-copy blockquote {
-    font-size: 22px;
-  }
-  .oracle-copy {
-    padding-inline: 18px;
-    margin-inline: -18px;
   }
   .install-aside h2 {
     font-size: 36px;
   }
   .installer {
     --panel-gutter: 20px;
-    box-shadow: 4px 4px 0 var(--rule);
+    padding-block: 24px;
   }
   .workflow {
     font-size: 10px;
   }
   .workflow li {
-    padding: 12px 8px;
+    padding-inline: 4px;
+  }
+  .installation-state {
+    padding: 16px;
   }
   .setup-hint {
     max-width: 16ch;
@@ -1621,33 +1504,29 @@ footer a:hover {
     flex-direction: column;
     gap: 16px;
   }
-  .aftercare-grid {
-    grid-template-columns: 1fr;
-    margin-top: 28px;
-  }
-  .aftercare-grid > div {
-    padding: 24px 0;
-  }
-  .aftercare-grid > div:nth-child(even) {
-    border-left: 0;
+  .aftercare {
+    padding-block: 40px;
   }
   .aftercare h2 {
     font-size: 38px;
   }
+  .aftercare-grid {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+  .return-to-install {
+    flex-wrap: wrap;
+  }
   .help {
-    padding: 24px 20px;
+    padding-block: 40px;
   }
   .help h2 {
-    font-size: 34px;
-  }
-  .technical summary {
-    font-size: 12px;
+    font-size: 32px;
   }
   .download-table {
     font-size: 10px;
   }
-  .download-table th,
-  .download-table td {
+  .download-table th, .download-table td {
     padding-inline: 6px;
   }
   .download-table small {
@@ -1658,32 +1537,37 @@ footer a:hover {
   .page {
     padding-inline: 16px;
   }
-  h1 {
-    font-size: 49px;
-  }
-  .horse-scene {
-    grid-template-columns: 64px minmax(0, 1fr);
-    gap: 12px;
-  }
-  .horse-scene img {
-    width: 64px;
-    height: 64px;
-  }
-  .horse-scene blockquote {
-    font-size: 18px;
-  }
   .installer {
     --panel-gutter: 16px;
   }
-  .installation-state {
-    padding: 14px;
+  .tarot-modes span {
+    font-size: 10px;
+    padding-inline: 8px;
   }
-  .oracle-actions {
-    gap: 0 12px;
+  .spread-positions {
+    gap: 4px;
+  }
+  .spread-positions strong {
+    font-size: 10px;
+  }
+  .tarot-history .text-link {
+    font-size: 11px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .primary:not(:disabled):active {
+    transform: none;
+  }
+}
+@media (forced-colors: active) {
+  .tarot-modes input:checked + span, .spread-positions button[aria-pressed="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -3px;
+  }
+  .status-dot {
+    background: CanvasText;
   }
 }

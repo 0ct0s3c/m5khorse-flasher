@@ -10,6 +10,17 @@ This repository carries the built browser installer and compiled firmware for
 **M5Stack PaperMono C153 with NFC + LoRa**. Firmware source is maintained
 separately. My luggage is public. My unfinished manuscripts are not.
 
+## Consult the deeply unqualified
+
+The page deals all 78 Horse Tarot cards with upright and reversed readings.
+Draw one card or choose **Past / Present / Future** for three distinct cards.
+Select a position to read it, reverse the card, or use **Previous** and **Next**
+to revisit the last twelve readings during this page visit. The cards have
+opinions. They have no access to the fucking USB port.
+
+Black, white and neutral gray. One Tarot illustration at a time. The separate
+librarian portrait has left the page; his language remains a public nuisance.
+
 ## Let the bastard in
 
 1. Open the flasher in **desktop Chrome or Edge**.
@@ -49,7 +60,7 @@ compiled revision, exact offsets, lengths and hashes.
 | `boot_app0.bin` | `0xe000` |
 | `K-HORSE-papermono.bin` | `0x10000` |
 
-The current package is **`b3f48fb`**. Its embedded revision, image headers,
+The current package is **`3edebb4`**. Its embedded revision, image headers,
 partition boundaries and all four SHA-256 digests were checked before
 publication. Display appearance, touch, NFC and radio behavior still need a
 hands-on check. The paperwork is in order. My bedside manner remains appalling.

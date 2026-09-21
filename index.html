@@ -7,11 +7,11 @@
       name="description"
       content="A pocket library. A few radios. An occult liability. Meet KEY-HORSE, draw from 78 illustrated Horse Tarot cards, and install on PaperMono C153."
     />
-    <meta name="theme-color" content="#f3f1e9" />
+    <meta name="theme-color" content="#ffffff" />
     <title>KEY-HORSE — Your future. Oh, fuck.</title>
-    <link rel="icon" href="assets/horse.png" type="image/png" />
-    <link rel="stylesheet" href="style.css?v=28c91ec3a9eb6858" />
-    <script type="module" src="app.js?v=d38993808c59cec0"></script>
+    <link rel="icon" href="assets/tarot/card-00.png" type="image/png" />
+    <link rel="stylesheet" href="style.css?v=6b7d5368e3ff57a5" />
+    <script type="module" src="app.js?v=84993ab6811915b9"></script>
   </head>
   <body>
     <a class="skip" href="#installer">Skip to installer</a>
@@ -55,22 +55,22 @@
           <section class="tarot-stage" id="tarot" aria-label="Draw a Horse Tarot card">
             <div class="tarot-heading"><span class="eyebrow">THE HORSE TAROT</span><span class="deck-stamp">78 CARDS / 156 READINGS</span></div>
             <p class="eyebrow tarot-kicker">THE DEPARTMENT OF FORESEEABLE BULLSHIT</p>
+            <fieldset class="tarot-modes" id="tarot-modes" hidden>
+              <legend class="sr-only">Choose your reading</legend>
+              <label><input type="radio" name="tarot-mode" id="tarot-single" value="1" checked /><span>One card</span></label>
+              <label><input type="radio" name="tarot-mode" id="tarot-three" value="3" /><span>Past / Present / Future</span></label>
+            </fieldset>
             <div class="tarot-spread">
-              <figure class="flank-card flank-left" aria-hidden="true">
-                <span>XIII / DEATH</span>
-                <img src="assets/tarot/card-13.png" width="384" height="384" alt="" />
-                <figcaption>DEATH, BUT<br />WITH ADMIN</figcaption>
-              </figure>
-              <figure class="flank-card flank-right" aria-hidden="true">
-                <span>XVI / THE TOWER</span>
-                <img src="assets/tarot/card-16.png" width="384" height="384" alt="" />
-                <figcaption>STRUCTURAL<br />FUCKING FAILURE</figcaption>
-              </figure>
               <figure class="tarot-card">
                 <p id="tarot-number">00 / Major Arcana</p>
                 <img id="tarot-image" src="assets/tarot/card-00.png" width="384" height="384" fetchpriority="high" alt="The Unsupervised Bastard: monochrome Horse Tarot illustration of the four-armed horse librarian." />
                 <figcaption><h2 id="tarot-title">THE UNSUPERVISED BASTARD</h2></figcaption>
               </figure>
+            </div>
+            <div class="spread-positions" id="tarot-positions" role="group" aria-label="Cards in your spread" hidden>
+              <button id="tarot-position-0" aria-pressed="true"><span>01 / Past</span><strong id="tarot-position-title-0"></strong></button>
+              <button id="tarot-position-1" aria-pressed="false"><span>02 / Present</span><strong id="tarot-position-title-1"></strong></button>
+              <button id="tarot-position-2" aria-pressed="false"><span>03 / Future</span><strong id="tarot-position-title-2"></strong></button>
             </div>
             <div class="oracle-actions">
               <button id="tarot-draw" class="draw-card" hidden>Draw another bastard <span aria-hidden="true">↗</span></button>
@@ -80,6 +80,11 @@
               <p class="reading-meta"><span id="tarot-traditional">The Fool</span><span id="tarot-orientation">Upright</span></p>
               <blockquote id="tarot-reading">“Four arms. No plan. The universe has asked me to stop touching things.”</blockquote>
             </div>
+            <nav class="tarot-history" id="tarot-history" aria-label="Revisit your readings" hidden>
+              <button id="tarot-back" class="text-link" disabled aria-label="Previous reading">← Previous</button>
+              <span id="tarot-history-count">Reading 1 / 1</span>
+              <button id="tarot-next" class="text-link" disabled aria-label="Next reading">Next →</button>
+            </nav>
             <p class="deck-count" id="tarot-count">78 cards. 156 readings. Zero fucking qualifications.</p>
             <noscript><p class="deck-count">Enable JavaScript to draw from the full deck.</p></noscript>
           </section>
@@ -108,13 +113,10 @@
               <div><dt>THE BROWSER</dt><dd>Desktop Chrome or Edge</dd></div>
               <div><dt>THE CABLE</dt><dd>USB data cable <span>Charging-only cables won't do.</span></dd></div>
             </dl>
-            <div class="horse-scene">
-              <img src="assets/horse.png" width="192" height="192" loading="lazy" alt="The four-armed horse librarian holding a book, a mug, a card and a microphone." />
-              <div class="horse-commentary">
-                <p class="eyebrow">YOUR RESIDENT / LEGALLY A HORSE</p>
-                <blockquote id="horse-remark" aria-live="polite" aria-atomic="true">“I asked the universe for a sign. It sent a cease-and-desist.”</blockquote>
-                <button class="horse-more" id="horse-more" hidden>Make him worse <span aria-hidden="true">↻</span></button>
-              </div>
+            <div class="horse-commentary">
+              <p class="eyebrow">YOUR RESIDENT / LEGALLY A HORSE</p>
+              <blockquote id="horse-remark" aria-live="polite" aria-atomic="true">“I asked the universe for a sign. It sent a cease-and-desist.”</blockquote>
+              <button class="horse-more" id="horse-more" hidden>Make him worse <span aria-hidden="true">↻</span></button>
             </div>
             <p class="aside-footnote">The cards are entertainment. The USB instructions are instructions.
               Confuse these and you'll be holding the power button through a séance.</p>

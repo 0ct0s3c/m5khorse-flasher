@@ -1,6 +1,7 @@
 * text=auto eol=lf
 # Preserve the exact manifest bytes covered by the release digest.
 firmware/** -text -whitespace
+release.json -text -whitespace
 *.bin binary
 *.png binary
 # Upstream notices retain their original whitespace.
