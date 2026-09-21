@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#f3f1e9" />
     <title>KEY-HORSE — Your future. Oh, fuck.</title>
     <link rel="icon" href="assets/horse.png" type="image/png" />
-    <link rel="stylesheet" href="style.css?v=42a3ec7794e82bc6" />
-    <script type="module" src="app.js?v=592f422d973f70e8"></script>
+    <link rel="stylesheet" href="style.css?v=28c91ec3a9eb6858" />
+    <script type="module" src="app.js?v=d38993808c59cec0"></script>
   </head>
   <body>
     <a class="skip" href="#installer">Skip to installer</a>
@@ -162,6 +162,14 @@
                 <span class="status-dot" aria-hidden="true"></span
                 ><span id="status-text">Loading and checking the firmware files…</span>
               </div>
+              <div class="package-transfer" id="package-transfer" hidden>
+                <div class="package-transfer-heading"><span>PACKAGE DOWNLOAD</span><span id="package-percent" aria-hidden="true">—</span></div>
+                <progress id="package-progress" max="100" aria-label="Firmware package preparation" aria-describedby="package-bytes package-count"></progress>
+                <div class="package-transfer-detail">
+                  <span id="package-bytes">Checking the manifest…</span>
+                  <span id="package-count" role="status">0 of 4 files checked</span>
+                </div>
+              </div>
               <progress
                 id="progress"
                 value="0"
@@ -178,6 +186,7 @@
               </ol>
               <button class="retry" id="retry-package" hidden>Check the package again <span aria-hidden="true">↻</span></button>
               <div class="status-actions">
+                <a class="log-link" id="status-help" href="#board-confirm" hidden>Confirm your board ↓</a>
                 <a class="log-link" id="status-log" href="#log" hidden>Read the installation log ↗</a>
                 <button class="log-link" id="save-log" hidden>Save log <span aria-hidden="true">↓</span></button>
               </div>
@@ -332,7 +341,7 @@
             </p>
           </div>
           <div class="questions">
-            <details>
+            <details id="connection-help">
               <summary>My PaperMono doesn't appear.</summary>
               <p>
                 Use a USB data cable; a charging-only cable cannot carry firmware.
@@ -344,7 +353,7 @@
                 >
               </p>
             </details>
-            <details>
+            <details id="storage-help">
               <summary>What happens to my books, horse and PIN?</summary>
               <p>
                 This installer writes four firmware segments and does not erase
@@ -386,14 +395,33 @@
                 grudge with the battery out.
               </p>
             </details>
-            <details>
+            <details id="package-help">
+              <summary>The firmware package won't load.</summary>
+              <p>
+                Check your internet connection, then choose <strong>Check the
+                package again</strong> in the installer. For a downloaded flasher,
+                extract the whole ZIP, run its launcher and keep the launcher
+                window open. Opening <code>index.html</code> directly will not work.
+              </p>
+              <p>
+                Package checks only download and verify files; they do not open
+                USB or write to your device. If a check keeps failing, save the
+                installation log before reloading.
+                <a href="#installer">Return to the installer ↑</a>
+              </p>
+            </details>
+            <details id="browser-help">
               <summary>Can I install without this browser?</summary>
               <p>
-                Use desktop Chrome or Edge on a computer with USB serial support.
-                This page supplies the firmware; no Python, compiler or local server
-                is needed. Open Release files below for the four flash segments and
-                their manifest if you use another installer. Match the offsets and
-                verify every write. Guesswork is for my Tarot readings.
+                USB installation needs desktop Chrome or Edge with USB serial
+                support, over HTTPS or localhost. In other browsers you can still
+                draw cards, read the setup instructions and download the firmware.
+              </p>
+              <p>
+                Using another installer? Download all four segments and their
+                manifest, use the listed flash offsets and verify every write.
+                Guesswork is for my Tarot readings.
+                <a href="#release-files">Open the firmware files and offsets ↓</a>
                 <a data-repository hidden>Open the download and install notes ↗</a>
               </p>
             </details>
@@ -402,12 +430,27 @@
 
         <details class="technical" id="technical">
           <summary>Release files &amp; installation log <span class="receipt-note">THE HORSE KEPT THE RECEIPTS</span></summary>
-          <p>
-            <a id="manifest-link" hidden>Download the segment manifest</a>
-            <span id="download-list"></span>
-          </p>
-          <pre id="log" tabindex="0" aria-label="Installation log">
+          <div class="technical-grid">
+            <section id="release-files" aria-labelledby="files-title">
+              <p class="eyebrow">01 / THE DELIVERY</p>
+              <h3 id="files-title">Four files. One horse.</h3>
+              <p id="download-status" role="status">Enable JavaScript to check the package and load its download links.</p>
+              <table class="download-table" id="download-table" hidden>
+                <caption>PaperMono C153 · SHA-256 checked downloads</caption>
+                <thead><tr><th scope="col">FILE</th><th scope="col">OFFSET</th><th scope="col">SIZE</th></tr></thead>
+                <tbody id="download-list"></tbody>
+              </table>
+              <p class="download-note" id="download-note" hidden>These downloads save the exact firmware bytes checked in this browser. Keep all four files together with the manifest.</p>
+              <p><a class="log-link" id="manifest-link" download="manifest.json" hidden>Download manifest &amp; SHA-256 checksums ↓</a></p>
+            </section>
+            <section aria-labelledby="log-title">
+              <p class="eyebrow">02 / THE PAPER TRAIL</p>
+              <h3 id="log-title">Installation log</h3>
+              <p>Connection, write and verification results appear here. Use Save log in the installer to keep a copy after an error or completed installation.</p>
+              <pre id="log" tabindex="0" aria-label="Installation log">
 No device connected.</pre>
+            </section>
+          </div>
           <p class="technical-note">
             All four firmware files are checked with SHA-256 before USB access.
             The installer checks for ESP32-S3 and 16 MB flash before writing,
