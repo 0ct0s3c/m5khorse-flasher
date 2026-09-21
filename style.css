@@ -95,8 +95,8 @@ pre:focus-visible,
 .masthead nav {
   display: flex;
   align-items: center;
-  gap: 28px;
-  font: 11px/1.5 var(--mono);
+  gap: 24px;
+  font: 12px/1.5 var(--mono);
 }
 .masthead nav a {
   display: inline-flex;
@@ -107,7 +107,9 @@ pre:focus-visible,
   text-decoration: none;
 }
 .masthead .nav-install {
-  border-bottom: 1px solid var(--ink);
+  padding-inline: 14px;
+  background: var(--ink);
+  color: var(--white);
   font-weight: bold;
 }
 .masthead nav a:hover {
@@ -125,8 +127,8 @@ pre:focus-visible,
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  padding: 30px 0 64px;
-  align-items: center;
+  padding: 28px 0 44px;
+  align-items: start;
 }
 .hero > * {
   min-width: 0;
@@ -138,7 +140,7 @@ pre:focus-visible,
   margin: 0;
 }
 .intro {
-  padding-block: 16px;
+  padding-block: 40px 16px;
 }
 .intro > .eyebrow {
   display: flex;
@@ -173,7 +175,7 @@ h1 em {
 }
 .hero-detail {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.75;
   max-width: 32em;
   margin: 20px 0 0;
@@ -183,7 +185,7 @@ h1 em {
   flex-wrap: wrap;
   align-items: center;
   gap: 14px 22px;
-  margin: 28px 0;
+  margin: 28px 0 24px;
 }
 .hero-actions .primary {
   width: auto;
@@ -196,7 +198,7 @@ h1 em {
   background: none;
   color: var(--ink);
   padding: 12px 0;
-  font: 11px/1.5 var(--mono);
+  font: 12px/1.5 var(--mono);
   text-decoration: underline;
   text-underline-offset: 5px;
   min-height: 44px;
@@ -267,10 +269,10 @@ h1 em {
   margin: 0 0 10px;
 }
 .tarot-card h2 {
-  font: bold 14px/1.35 var(--mono);
+  font: bold 13px/1.35 var(--mono);
   letter-spacing: -0.3px;
   margin: 10px 0 2px;
-  min-height: 38px;
+  height: 4.05em;
   display: grid;
   align-items: center;
 }
@@ -294,22 +296,24 @@ h1 em {
 .oracle-copy {
   border-top: 1px solid var(--ink);
   padding-top: 14px;
+  margin-top: 18px;
 }
 .reading-meta {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font: 10px/1.5 var(--mono);
+  font: 11px/1.5 var(--mono);
   text-transform: uppercase;
   margin: 0;
 }
 .reading-meta span:last-child {
   font-weight: bold;
   letter-spacing: 0.7px;
+  flex: none;
 }
 .oracle-copy blockquote {
   font: italic 23px/1.4 Georgia, serif;
-  margin: 12px 0 16px;
+  margin: 12px 0 0;
   min-height: 4.2em;
   text-wrap: pretty;
 }
@@ -317,14 +321,14 @@ h1 em {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 22px;
+  gap: 8px 16px;
 }
 .draw-card {
   border: 1px solid var(--ink);
   color: var(--ink);
   background: transparent;
   padding: 13px 15px;
-  font: bold 11px/1.5 var(--mono);
+  font: bold 12px/1.5 var(--mono);
   min-height: 46px;
 }
 .draw-card:hover {
@@ -336,14 +340,13 @@ h1 em {
 }
 .deck-count {
   color: var(--muted);
-  font: 10px/1.6 var(--mono);
+  font: 11px/1.6 var(--mono);
   margin: 13px 0 0;
 }
 .install-section {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: 80px;
-  border-top: 2px solid var(--ink);
+  gap: 64px;
   padding-block: 56px 64px;
   align-items: start;
 }
@@ -382,20 +385,20 @@ h1 em {
   padding: 15px 0;
 }
 .install-kit dt {
-  font: 9px/1.6 var(--mono);
+  font: 10px/1.6 var(--mono);
   letter-spacing: 0.4px;
   color: var(--muted);
 }
 .install-kit dd {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.6;
 }
 .install-kit dd span {
   display: block;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: normal;
 }
 .horse-scene {
@@ -447,30 +450,47 @@ h1 em {
 .horse-more:disabled {
   opacity: 0.45;
 }
-.feature-line {
+.inventory {
+  border-block: 2px solid var(--ink);
+  padding-block: 16px 8px;
+}
+.inventory > .eyebrow {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 16px;
-  font: 9px/1.6 var(--mono);
-  letter-spacing: 0.5px;
+  justify-content: space-between;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.feature-line {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0 20px;
+  font: bold 12px/1.6 var(--mono);
   margin: 0;
-  padding: 20px 0 0;
-  border-top: 1px solid var(--rule);
+  padding: 0;
   list-style: none;
 }
-.feature-line li {
-  display: inline-flex;
+.feature-line a {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
+  min-height: 48px;
+  padding-block: 10px;
+  text-decoration: none;
 }
-.feature-line li::before {
-  content: "+";
+.feature-line a span {
   color: var(--muted);
+}
+.feature-line a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 .margin-note {
   font: 11px/1.6 var(--mono);
   max-width: 35em;
-  margin: 20px 0 0;
+  margin: 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
   color: var(--muted);
 }
 .margin-note span {
@@ -574,7 +594,7 @@ h1 em {
   font-size: 13px;
 }
 .browser-check {
-  font: 10px/1.6 var(--mono);
+  font: 11px/1.6 var(--mono);
   color: var(--muted);
   margin: 12px 0 18px;
 }
@@ -606,13 +626,13 @@ h1 em {
   align-items: center;
 }
 .release dt {
-  font: 9px/1.5 var(--mono);
+  font: 10px/1.5 var(--mono);
   letter-spacing: 0.7px;
   color: var(--muted);
 }
 .release dd {
   margin: 0;
-  font: 11px/1.6 var(--mono);
+  font: 12px/1.6 var(--mono);
   text-align: right;
   overflow-wrap: anywhere;
 }
@@ -627,10 +647,11 @@ h1 em {
   gap: 17px;
 }
 .setup-guide {
-  margin-block: 8px 22px;
+  margin-block: 20px 22px;
+  border-top: 1px solid var(--rule);
 }
 .setup-guide > summary {
-  font: bold 11px/1.5 var(--mono);
+  font: bold 12px/1.5 var(--mono);
   gap: 10px;
 }
 .setup-hint {
@@ -658,11 +679,11 @@ h1 em {
   flex: none;
 }
 .steps strong {
-  font-size: 12px;
+  font-size: 14px;
 }
 .steps p {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.65;
   color: var(--muted);
   margin: 4px 0 0;
 }
@@ -670,7 +691,7 @@ h1 em {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   cursor: pointer;
   padding: 14px;
@@ -696,8 +717,8 @@ h1 em {
   margin: 0;
 }
 .board-note {
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.65;
   color: var(--muted);
   margin: 10px 0 20px;
 }
@@ -759,14 +780,14 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font: bold 10px/1.6 var(--mono);
+  font: bold 11px/1.6 var(--mono);
   letter-spacing: 0.8px;
 }
 .status {
   display: flex;
   gap: 8px;
   align-items: flex-start;
-  font: 11px/1.6 var(--mono);
+  font: 12px/1.6 var(--mono);
   color: var(--muted);
   margin-top: 7px;
 }
@@ -787,6 +808,14 @@ button:disabled {
 .installation-state[data-state="done"] {
   border-color: var(--success);
   background: #edf0e7;
+}
+.installation-state[data-state="ready"],
+.installation-state[data-state="selected"] {
+  border-left-color: var(--success);
+}
+.installation-state[data-state="ready"] .status-dot,
+.installation-state[data-state="selected"] .status-dot {
+  color: var(--success);
 }
 .log-link {
   display: inline-flex;
@@ -885,8 +914,8 @@ button:disabled {
 }
 .preserve {
   text-align: center;
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 12px;
+  line-height: 1.65;
   color: var(--muted);
   border-top: 1px dashed var(--rule);
   padding-top: 14px;
@@ -925,12 +954,13 @@ progress::-moz-progress-bar {
 .aftercare-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px 40px;
+  gap: 32px;
   margin-top: 32px;
 }
 .aftercare-grid > div {
   border-top: 1px solid var(--rule);
   padding-top: 18px;
+  scroll-margin-top: 28px;
 }
 .aftercare h2 {
   font-size: 34px;
@@ -939,20 +969,32 @@ progress::-moz-progress-bar {
   margin: 0;
 }
 .number {
-  font: 10px/1.5 var(--mono);
+  font: 11px/1.5 var(--mono);
   letter-spacing: 0.5px;
   color: var(--muted);
 }
 h3 {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.45;
   margin: 13px 0 9px;
 }
 .aftercare p:not(.eyebrow) {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7;
   margin: 0;
+}
+.return-to-install {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 24px;
+  border-top: 1px solid var(--rule);
+  margin-top: 32px;
+  padding-top: 18px;
+}
+.return-to-install .text-link {
+  flex: none;
 }
 code {
   font-size: 0.96em;
@@ -985,7 +1027,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding: 17px 0;
   min-height: 48px;
@@ -1015,7 +1057,7 @@ details[open] > summary:after {
   color: var(--muted);
 }
 .questions p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0 25px 18px 0;
@@ -1085,6 +1127,10 @@ footer a:hover {
   .hero {
     gap: 32px;
   }
+  .feature-line {
+    gap: 0 16px;
+    font-size: 11px;
+  }
   .tarot-stage {
     padding-left: 24px;
   }
@@ -1138,7 +1184,14 @@ footer a:hover {
   .hero {
     grid-template-columns: 1fr;
     padding: 20px 0 42px;
-    gap: 40px;
+    gap: 32px;
+  }
+  .feature-line {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    font-size: 12px;
+  }
+  .feature-line li:nth-child(n + 4) {
+    border-top: 1px solid var(--rule);
   }
   .install-section {
     grid-template-columns: 1fr;
@@ -1167,7 +1220,7 @@ footer a:hover {
     padding: 10px;
   }
   .oracle-copy blockquote {
-    min-height: 0;
+    min-height: 4.2em;
   }
   .intro {
     padding: 10px 0 0;
@@ -1227,11 +1280,14 @@ footer a:hover {
   .masthead nav {
     width: 100%;
     justify-content: space-between;
-    gap: 12px;
-    font-size: 10px;
+    gap: 8px;
+    font-size: 11px;
   }
   .masthead nav a {
-    gap: 8px;
+    gap: 6px;
+  }
+  .masthead .nav-install {
+    padding-inline: 10px;
   }
   .edition span:last-child {
     display: none;
@@ -1255,7 +1311,39 @@ footer a:hover {
   }
   .tarot-heading .eyebrow,
   .deck-stamp {
-    font-size: 8px;
+    font-size: 10px;
+  }
+  .tarot-card {
+    width: 78%;
+  }
+  .tarot-spread {
+    margin-bottom: 18px;
+  }
+  .flank-card > span,
+  .flank-card figcaption {
+    visibility: hidden;
+  }
+  .oracle-actions {
+    display: grid;
+    gap: 2px;
+  }
+  .draw-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .oracle-actions .text-link {
+    justify-self: center;
+  }
+  .feature-line {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .feature-line li:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
+  }
+  .return-to-install {
+    flex-wrap: wrap;
   }
   .oracle-copy blockquote {
     font-size: 22px;
@@ -1264,7 +1352,7 @@ footer a:hover {
     font-size: 36px;
   }
   .installer {
-    padding: 22px;
+    padding: 20px;
     box-shadow: 4px 4px 0 var(--wash);
   }
   .workflow {

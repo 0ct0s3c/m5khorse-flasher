@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#f3f1e9" />
     <title>KEY-HORSE — Your future. Oh, fuck.</title>
     <link rel="icon" href="assets/horse.png" type="image/png" />
-    <link rel="stylesheet" href="style.css?v=aedf0f0948943f68" />
+    <link rel="stylesheet" href="style.css?v=e47e1118373cc39a" />
     <script type="module" src="app.js?v=592f422d973f70e8"></script>
   </head>
   <body>
@@ -49,9 +49,6 @@
               <a class="primary" href="#installer">Install KEY-HORSE <span aria-hidden="true">↘</span></a>
               <a class="text-link" href="#aftercare">What's in the rectangle? ↓</a>
             </div>
-            <ul class="feature-line" aria-label="On the device">
-              <li>TXT BOOKS</li><li>NFC TOOLS</li><li>VOICE LOG</li><li>LORA MESH</li><li>WI-FI + BLE</li><li>BLUES HID</li><li>78-CARD TAROT</li>
-            </ul>
             <p class="margin-note"><span aria-hidden="true">↳</span> No subscription. No streak guilt. I will not die for a fucking retention metric.</p>
           </section>
 
@@ -75,18 +72,30 @@
                 <figcaption><h2 id="tarot-title">THE UNSUPERVISED BASTARD</h2></figcaption>
               </figure>
             </div>
-            <div class="oracle-copy" aria-live="polite" aria-atomic="true">
-              <p class="reading-meta"><span id="tarot-traditional">The Fool</span><span id="tarot-orientation">Upright</span></p>
-              <blockquote id="tarot-reading">“Four arms. No plan. The universe has asked me to stop touching things.”</blockquote>
-            </div>
             <div class="oracle-actions">
               <button id="tarot-draw" class="draw-card" hidden>Draw another bastard <span aria-hidden="true">↗</span></button>
               <button id="tarot-flip" class="text-link" hidden>Read reversed ↻</button>
+            </div>
+            <div class="oracle-copy" aria-live="polite" aria-atomic="true">
+              <p class="reading-meta"><span id="tarot-traditional">The Fool</span><span id="tarot-orientation">Upright</span></p>
+              <blockquote id="tarot-reading">“Four arms. No plan. The universe has asked me to stop touching things.”</blockquote>
             </div>
             <p class="deck-count" id="tarot-count">78 cards. 156 readings. Zero fucking qualifications.</p>
             <noscript><p class="deck-count">Enable JavaScript to draw from the full deck.</p></noscript>
           </section>
         </div>
+
+        <nav class="inventory" aria-label="Explore KEY-HORSE features">
+          <p class="eyebrow">INSIDE THE RECTANGLE <span aria-hidden="true">↘</span></p>
+          <ul class="feature-line">
+            <li><a href="#feature-read">TXT books <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-nfc">NFC tools <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-voice">Voice notes <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-mesh">LoRa mesh <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-wireless">Wireless + HID <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-tarot">Horse Tarot <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </nav>
 
         <section class="install-section" aria-label="Install KEY-HORSE">
           <div class="install-aside">
@@ -144,6 +153,41 @@
                 <dd id="package-size">Checking release…</dd>
               </div>
             </dl>
+            <div class="installation-state" id="installation-state" data-state="checking" tabindex="-1" aria-labelledby="status-label">
+              <div class="status-heading">
+                <span id="status-label">CHECKING THE PACKAGE</span>
+                <span id="progress-label" aria-hidden="true" hidden>0%</span>
+              </div>
+              <div class="status" role="status" aria-live="polite" aria-atomic="true">
+                <span class="status-dot" aria-hidden="true"></span
+                ><span id="status-text">Loading and checking the firmware files…</span>
+              </div>
+              <progress
+                id="progress"
+                value="0"
+                max="100"
+                aria-label="Firmware installation progress"
+                hidden
+              ></progress>
+              <p class="transfer-detail" id="transfer-detail" role="status" hidden></p>
+              <ol class="segment-receipt" id="segment-receipt" aria-label="Device verification by segment" hidden>
+                <li id="segment-0" data-state="pending"><span>Bootloader</span><strong id="segment-state-0">Waiting</strong></li>
+                <li id="segment-1" data-state="pending"><span>Partition table</span><strong id="segment-state-1">Waiting</strong></li>
+                <li id="segment-2" data-state="pending"><span>Boot selection</span><strong id="segment-state-2">Waiting</strong></li>
+                <li id="segment-3" data-state="pending"><span>KEY-HORSE firmware</span><strong id="segment-state-3">Waiting</strong></li>
+              </ol>
+              <button class="retry" id="retry-package" hidden>Check the package again <span aria-hidden="true">↻</span></button>
+              <div class="status-actions">
+                <a class="log-link" id="status-log" href="#log" hidden>Read the installation log ↗</a>
+                <button class="log-link" id="save-log" hidden>Save log <span aria-hidden="true">↓</span></button>
+              </div>
+            </div>
+            <section class="next-step" id="next-step" aria-labelledby="next-title" hidden>
+              <p class="eyebrow">NEXT / OVER TO YOU</p>
+              <h3 id="next-title"></h3>
+              <p id="next-text"></p>
+              <a id="next-link" href="#aftercare">Meet your new dependent ↗</a>
+            </section>
             <details class="setup-guide" id="setup-guide" open>
               <summary>USB setup <span class="setup-hint">Cable · download mode · connect</span></summary>
               <ol class="steps" id="before">
@@ -201,41 +245,6 @@
             <button class="secondary" id="disconnect" hidden>
               Disconnect without installing
             </button>
-            <div class="installation-state" id="installation-state" data-state="checking" tabindex="-1" aria-labelledby="status-label">
-              <div class="status-heading">
-                <span id="status-label">CHECKING THE PACKAGE</span>
-                <span id="progress-label" aria-hidden="true" hidden>0%</span>
-              </div>
-              <div class="status" role="status" aria-live="polite" aria-atomic="true">
-                <span class="status-dot" aria-hidden="true"></span
-                ><span id="status-text">Loading and checking the firmware files…</span>
-              </div>
-              <progress
-                id="progress"
-                value="0"
-                max="100"
-                aria-label="Firmware installation progress"
-                hidden
-              ></progress>
-              <p class="transfer-detail" id="transfer-detail" role="status" hidden></p>
-              <ol class="segment-receipt" id="segment-receipt" aria-label="Device verification by segment" hidden>
-                <li id="segment-0" data-state="pending"><span>Bootloader</span><strong id="segment-state-0">Waiting</strong></li>
-                <li id="segment-1" data-state="pending"><span>Partition table</span><strong id="segment-state-1">Waiting</strong></li>
-                <li id="segment-2" data-state="pending"><span>Boot selection</span><strong id="segment-state-2">Waiting</strong></li>
-                <li id="segment-3" data-state="pending"><span>KEY-HORSE firmware</span><strong id="segment-state-3">Waiting</strong></li>
-              </ol>
-              <button class="retry" id="retry-package" hidden>Check the package again <span aria-hidden="true">↻</span></button>
-              <div class="status-actions">
-                <a class="log-link" id="status-log" href="#log" hidden>Read the installation log ↗</a>
-                <button class="log-link" id="save-log" hidden>Save log <span aria-hidden="true">↓</span></button>
-              </div>
-            </div>
-            <section class="next-step" id="next-step" aria-labelledby="next-title" hidden>
-              <p class="eyebrow">NEXT / OVER TO YOU</p>
-              <h3 id="next-title"></h3>
-              <p id="next-text"></p>
-              <a id="next-link" href="#aftercare">Meet your new dependent ↗</a>
-            </section>
             <p class="preserve">
               Updates preserve KEY-HORSE settings, horse progress and your PIN.<br />
               This installer does not access your microSD card.
@@ -257,7 +266,7 @@
             </h2>
           </div>
           <div class="aftercare-grid">
-            <div>
+            <div id="feature-read">
               <span class="number">01 / READ</span>
               <h3>Your reading pile has a parasite.</h3>
               <p>
@@ -269,7 +278,7 @@
                 with opinions on narrative structure.
               </p>
             </div>
-            <div>
+            <div id="feature-nfc">
               <span class="number">02 / NFC</span>
               <h3>Inspect the little plastic bastard.</h3>
               <p>
@@ -278,34 +287,38 @@
                 a tag. He cannot sweet-talk a locked door into a different security model.
               </p>
             </div>
-            <div>
+            <div id="feature-voice">
               <span class="number">03 / VOICE LOG</span>
               <h3>Record your descent into genius.</h3>
               <p>Record voice notes to microSD and play them back on the device.
                 Capture the thought before it escapes. Later, establish whether
                 it was a thought or just a fart wearing a little hat.</p>
             </div>
-            <div>
+            <div id="feature-mesh">
               <span class="number">04 / MESHTASTIC</span>
               <h3>Gossip beyond the router.</h3>
               <p>Send Meshtastic messages over LoRa. Set your region and channel
                 first; compatible peers must be in radio range. No mobile network
                 required. Your terrible opinions can now cross a field under their own steam.</p>
             </div>
-            <div>
+            <div id="feature-wireless">
               <span class="number">05 / WIRELESS + BLUES HID</span>
               <h3>The air is full of bullshit.</h3>
               <p>Observe Wi-Fi and BLE, inspect LoRa signal levels, or use BLUES
                 as a Bluetooth keyboard, mouse and media remote with a paired
                 device. Four hands, and he still types like a fucking bailiff.</p>
             </div>
-            <div>
+            <div id="feature-tarot">
               <span class="number">06 / HORSE TAROT</span>
               <h3>Ask a deeply unqualified cunt.</h3>
               <p><strong>READ → Tarot</strong> opens 78 illustrated cards with
                 upright and reversed readings. Spite. Poor Decisions. Grudges. Debt.
                 Finally, a spiritual practice with an accurate household budget.</p>
             </div>
+          </div>
+          <div class="return-to-install">
+            <p>One rectangle. Far too many responsibilities.</p>
+            <a class="text-link" href="#installer">Get KEY-HORSE <span aria-hidden="true">↑</span></a>
           </div>
         </section>
 
