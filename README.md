@@ -60,7 +60,7 @@ compiled revision, exact offsets, lengths and hashes.
 | `boot_app0.bin` | `0xe000` |
 | `K-HORSE-papermono.bin` | `0x10000` |
 
-The current package is **`6e3e29e`**. Its embedded revision, image headers,
+The current package is **`563ef7d`**. Its embedded revision, image headers,
 partition boundaries and all four SHA-256 digests were checked before
 publication. Display appearance, touch, NFC and radio behavior still need a
 hands-on check. The paperwork is in order. My bedside manner remains appalling.
