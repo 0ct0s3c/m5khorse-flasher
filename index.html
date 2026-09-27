@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#ffffff" />
     <title>KEY-HORSE — Your future. Oh, fuck.</title>
     <link rel="icon" href="assets/tarot/card-00.png" type="image/png" />
-    <link rel="stylesheet" href="style.css?v=6b7d5368e3ff57a5" />
+    <link rel="stylesheet" href="style.css?v=c316d10c7db141e1" />
     <script type="module" src="app.js?v=ae3e8b2afc5921b1"></script>
   </head>
   <body>
@@ -21,7 +21,7 @@
           >KEY-HORSE<span class="mark" aria-hidden="true">✳</span></a
         >
         <nav aria-label="Main navigation">
-          <a class="nav-install" href="#installer">Install <span aria-hidden="true">↘</span></a><a href="#tarot">Draw a card</a><a href="#help">Help</a
+          <a class="nav-install" href="#installer">Install <span aria-hidden="true">↘</span></a><a href="#whats-new">What's new</a><a href="#tarot">Draw a card</a><a href="#help">Help</a
           ><a data-repository hidden>Downloads ↗</a>
         </nav>
       </header>
@@ -93,7 +93,7 @@
         <nav class="inventory" aria-label="Explore KEY-HORSE features">
           <p class="eyebrow">INSIDE THE RECTANGLE <span aria-hidden="true">↘</span></p>
           <ul class="feature-line">
-            <li><a href="#feature-read">TXT books <span aria-hidden="true">↗</span></a></li>
+            <li><a href="#feature-read">Books + import <span aria-hidden="true">↗</span></a></li>
             <li><a href="#feature-nfc">NFC tools <span aria-hidden="true">↗</span></a></li>
             <li><a href="#feature-voice">Voice notes <span aria-hidden="true">↗</span></a></li>
             <li><a href="#feature-mesh">LoRa mesh <span aria-hidden="true">↗</span></a></li>
@@ -101,6 +101,12 @@
             <li><a href="#feature-tarot">Horse Tarot <span aria-hidden="true">↗</span></a></li>
           </ul>
         </nav>
+
+        <a class="update-teaser" href="#whats-new">
+          <span class="eyebrow">LATEST FIELD NOTES <span class="update-stamp">27 SEP</span></span>
+          <span>More books. A less lost horse. Keepsakes worth keeping.</span>
+          <strong>72 commits, unpacked <span aria-hidden="true">↓</span></strong>
+        </a>
 
         <section class="install-section" aria-label="Install KEY-HORSE">
           <div class="install-aside">
@@ -156,6 +162,7 @@
                 <dd id="package-size">Checking release…</dd>
               </div>
             </dl>
+            <a class="release-notes-link" href="#whats-new">Read the changes through 451429f <span aria-hidden="true">↗</span></a>
             <div class="installation-state" id="installation-state" data-state="checking" tabindex="-1" aria-labelledby="status-label">
               <div class="status-heading">
                 <span id="status-label">CHECKING THE PACKAGE</span>
@@ -273,9 +280,122 @@
           </section>
         </section>
 
+        <section class="field-notes" id="whats-new" aria-labelledby="updates-title" data-notes-from="563ef7d" data-notes-through="451429f">
+          <div class="updates-heading">
+            <div>
+              <p class="eyebrow">02 / WHAT'S NEW · 27 SEPTEMBER 2026</p>
+              <h2 id="updates-title">A bigger library.<br /><em>A longer alibi.</em></h2>
+              <p class="updates-dek">Seventy-two commits since the last public build. The horse calls it personal growth. We kept the fucking receipts.</p>
+            </div>
+            <dl class="update-receipt" aria-label="Release notes coverage">
+              <div><dt>PREVIOUS WEB BUILD</dt><dd><code>563ef7d</code><span>22 SEP 2026</span></dd></div>
+              <div><dt>CHANGES THROUGH</dt><dd><code>451429f</code><span>27 SEP 2026</span></dd></div>
+              <div class="receipt-total"><dt>THE PAPER TRAIL</dt><dd>72 commits <span>9 functional groups</span></dd></div>
+            </dl>
+          </div>
+
+          <div class="update-highlights" aria-label="Release highlights">
+            <a href="#changes-books" class="update-highlight">
+              <span class="eyebrow">01 / THE READING PILE</span>
+              <h3>Bring the books.<br /><em>All the bloody books.</em></h3>
+              <p>EPUB and FB2 join TXT. PDF and DjVu become page books through File commander.</p>
+              <span class="highlight-foot">More formats, same feed bill <span aria-hidden="true">↗</span></span>
+            </a>
+            <a href="#changes-nogps" class="update-highlight">
+              <span class="eyebrow">02 / A SENSE OF PLACE</span>
+              <h3>Still no GPS.<br /><em>Better whereabouts.</em></h3>
+              <p>A larger offline map, walking-aware surveys and more careful Wi-Fi estimates.</p>
+              <span class="highlight-foot">The ring is an estimate <span aria-hidden="true">↗</span></span>
+            </a>
+            <a href="#changes-horse" class="update-highlight">
+              <span class="eyebrow">03 / SIGNS OF ATTACHMENT</span>
+              <h3>He kept the cup.<br /><em>Don't make it weird.</em></h3>
+              <p>Ten named keepsakes, seven hidden stories and four bond chapters. Your progress has somewhere to live.</p>
+              <span class="highlight-foot">Earned. Saved. Kept. <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+
+          <div class="change-index-heading"><p class="eyebrow">OPEN A CHAPTER</p><span>New features, refinements &amp; fixes</span></div>
+          <div class="change-index">
+            <details id="changes-books">
+              <summary><span class="change-number" aria-hidden="true">01</span><span class="change-title">Reading &amp; book formats</span><span class="change-kind">NEW FORMATS</span></summary>
+              <div class="change-body">
+                <p>Open <strong>EPUB, FB2 and TXT</strong> from <code>/books</code>, with adjustable text size and saved progress. EPUB/FB2 show reflowed text; publisher styling and images are omitted.</p>
+                <p><strong>Import book</strong> in File commander converts PDF and DjVu locally to <code>.khbook</code>. Preview, choose ink strength and pages, then upload. Originals stay intact. Converted pages keep diagrams, bookmarks and four 2× detail views; they do not reflow or earn word-based reading rewards.</p>
+                <p>Better chapter parsing, accented text and cover handling. Clearer damaged-file, SD and DRM errors. A failed open or bookmark save keeps your current reading place available.</p>
+              </div>
+            </details>
+            <details id="changes-commander">
+              <summary><span class="change-number" aria-hidden="true">02</span><span class="change-title">File Commander &amp; transfers</span><span class="change-kind">REFINED</span></summary>
+              <div class="change-body">
+                <p>Import gets its own progress display and valid page range. Expired sessions close the import dialog so you can sign in again. Saved-network pages and Wi-Fi drafts survive Settings detours.</p>
+                <p>Upload preflight checks the whole destination folder for duplicates before sending any file. Cancelled or incomplete checks stop the batch. Recoverable <code>.part</code> files are visible, and existing destination files stay intact.</p>
+                <p>USB map replacements keep the old file until the new one passes readback. Replies finish cleanly, larger status messages fit, and book/map uploads wait for their progress frame to finish.</p>
+              </div>
+            </details>
+            <details id="changes-nogps">
+              <summary><span class="change-number" aria-hidden="true">03</span><span class="change-title">NOGPS maps &amp; walking</span><span class="change-kind">EXPANDED</span></summary>
+              <div class="change-body">
+                <p>More map, a north arrow, an on-map estimate radius and stable scale through card-read failures. The region anchor is saved, searches follow recent pins, and replacement indexes are picked up without restarting.</p>
+                <p>BMI270 step/turn tracking switches NOGPS surveys to a 20-second interval while walking. Freshness checks, radio grouping and outlier rejection make the estimate more careful about which observations it trusts.</p>
+                <p>Fit and walk logs plus computer-side address lookup help inspect results. <strong>Matching region data and an offline map must be on microSD.</strong> This remains a Wi-Fi estimate; outdoor accuracy is not established by the model's tests.</p>
+              </div>
+            </details>
+            <details id="changes-spectrum">
+              <summary><span class="change-number" aria-hidden="true">04</span><span class="change-title">Wi-Fi &amp; LoRa spectrum</span><span class="change-kind">REFINED</span></summary>
+              <div class="change-body">
+                <p>Both plots share clearer peaks, reference ticks, cursors and history. Wi-Fi adds <strong>LATEST / HOLD</strong> and tap-to-inspect levels. LoRa adds <strong>FULL / ×4 / ×16</strong> spans, four RSSI reads per bin and a median readout.</p>
+                <p>Wi-Fi envelopes are modeled access-point footprints. The device still listens at HT20; the new host-tested HT40 mapping does not claim live 40 MHz capture.</p>
+              </div>
+            </details>
+            <details id="changes-horse">
+              <summary><span class="change-number" aria-hidden="true">05</span><span class="change-title">MY HORSE &amp; keepsakes</span><span class="change-kind">NEW STORIES</span></summary>
+              <div class="change-body">
+                <p>Ten mementos acquire names and scenes. Seven hidden achievements gain longer stories. Four bond chapters open at the existing <strong>0 / 100 / 300 / 1,000 XP</strong> thresholds, including for already-earned valid saves.</p>
+                <p><strong>Kept</strong> and <strong>Awaiting save</strong> mean different things. New stories wait for a checked save; older ones stay readable after a later failure. Retry save does not spend food, and unfinished keepsakes show their progress.</p>
+                <p>Saved melody and pomodoro achievements recover after a restart. No new streak, deadline or offline penalty. He is attached, not your fucking line manager.</p>
+              </div>
+            </details>
+            <details id="changes-settings">
+              <summary><span class="change-number" aria-hidden="true">06</span><span class="change-title">Settings, light &amp; sound</span><span class="change-kind">NEW CONTROLS</span></summary>
+              <div class="change-body">
+                <p>Eight clear Settings entries, focused Display and Buttons pages, visible current choices and <strong>Retry save</strong> after failed preference writes. Closing Settings clears discarded editors; returning to a retained draft keeps its place.</p>
+                <p>Dim uses a much lower frontlight drive. UI and notification sounds have separate saved <strong>Off / Quiet / Soft / Clear</strong> levels and six previews. Muted previews stay inactive; text entry and page turns stay quiet. Actual brightness and audibility still depend on the device.</p>
+              </div>
+            </details>
+            <details id="changes-clock">
+              <summary><span class="change-number" aria-hidden="true">07</span><span class="change-title">Clock &amp; alarms</span><span class="change-kind">NEW CONTROLS</span></summary>
+              <div class="change-body">
+                <p>Set date/time on the device or <strong>Sync now</strong> using File commander's saved Wi-Fi networks. Automatic NTP and timezone choices include Warsaw / EU daylight saving, UTC and fixed offsets.</p>
+                <p>Clock writes are read back before success. Corrections preserve timer deadlines, keypads clear stale notices, and either physical button silences a ringing alarm even at the PIN screen. Zone changes apply at synchronization; an offline clock needs a later sync or manual correction.</p>
+              </div>
+            </details>
+            <details id="changes-ink">
+              <summary><span class="change-number" aria-hidden="true">08</span><span class="change-title">E-paper &amp; cleanup</span><span class="change-kind">REWORKED</span></summary>
+              <div class="change-body">
+                <p>Flashless OTP refresh carries the previous displayed image and reinforces the edges in both palettes. In <strong>451429f</strong>, every submitted frame gets exactly one extra whole-frame cleanup pass showing the same image. Finished screens stay quiet.</p>
+                <p>Image history, sleep and upload progress wait for both passes and confirmed controller sleep. Startup failures offer explicit recovery. The extra pass takes time and energy; ghosting and visible flashing still need inspection on the actual panel.</p>
+              </div>
+            </details>
+            <details id="changes-recovery">
+              <summary><span class="change-number" aria-hidden="true">09</span><span class="change-title">The everyday fixes</span><span class="change-kind">FIXED</span></summary>
+              <div class="change-body">
+                <p>Accents, wrapped text, editor carets, Shift/Backspace and centered notices behave more consistently. Settled message drafts and handled recording failures stop blocking sleep. Playback starts without an extra list redraw.</p>
+                <p>NFC recovers after confirmed RF-off retries and keeps saved captures distinct from fresh reads. Incomplete Type 2 archives retain missing-page information; copying skips unread pages, and unsupported presentation stays unavailable.</p>
+                <p>More internal memory is available for radio startup, with buffer guards and retained fault evidence for diagnostics. The full changelog accounts for every commit, including a change and its revert.</p>
+              </div>
+            </details>
+          </div>
+          <div class="updates-footer">
+            <p>Your existing settings, horse progress and PIN survive the four-segment update. Your microSD files stay where you left them.</p>
+            <a class="text-link" href="changelog.md" download="KEY-HORSE-changelog.md">Keep the full changelog <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#installer">Install the update <span aria-hidden="true">↑</span></a>
+          </div>
+        </section>
+
         <section class="aftercare" id="aftercare" aria-label="After installation">
           <div class="section-heading">
-            <p class="eyebrow">02 / IT ALSO DOES USEFUL SHIT</p>
+            <p class="eyebrow">03 / IT ALSO DOES USEFUL SHIT</p>
             <h2>
               Useful things.<br /><em>Terrible company.</em>
             </h2>
@@ -285,9 +405,10 @@
               <span class="number">01 / READ</span>
               <h3>A book club with a fucking feed bill.</h3>
               <p>
-                Put UTF-8 .txt books in <code>/books</code> on a microSD card.
-                Open <strong>READ → Books</strong>, or start with a built-in
-                sample without a card. Fresh reading earns food; tap the horse's
+                Put TXT, EPUB or FB2 books in <code>/books</code> on microSD.
+                EPUB/FB2 read as text; File commander imports PDF and DjVu as
+                page images. Open <strong>READ → Books</strong>, or try a built-in
+                sample. Fresh text reading earns food; tap the horse's
                 stats to feed him in <strong>MY HORSE</strong>. You do the reading.
                 He gets lunch. It is a book club in the same sense a mugging is
                 a financial consultation.
@@ -321,7 +442,8 @@
             <div id="feature-wireless">
               <span class="number">05 / WIRELESS + BLUES HID</span>
               <h3>The air has a comments section.</h3>
-              <p>Observe Wi-Fi and BLE, inspect LoRa signal levels, or use BLUES
+              <p>Observe Wi-Fi and BLE, inspect LoRa signal levels, estimate your
+                position with NOGPS and matching offline map/region files, or use BLUES
                 as a Bluetooth keyboard, mouse and media remote with a paired
                 device. He can investigate invisible noise and press mute.
                 This is the closest he has come to personal growth.</p>
@@ -342,7 +464,7 @@
 
         <section class="help" id="help" aria-labelledby="help-title">
           <div>
-            <p class="eyebrow">03 / TECHNICAL SUPPORT, SOMEHOW</p>
+            <p class="eyebrow">04 / TECHNICAL SUPPORT, SOMEHOW</p>
             <h2 id="help-title">Shit's not working.</h2>
             <p>
               Before we blame Mercury, let's check the cable.<br />
