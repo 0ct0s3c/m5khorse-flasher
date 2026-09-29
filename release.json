@@ -1,5 +1,5 @@
 {
-  "manifest": "firmware/3bfe8927d9b07d9e86dfef653e6e5e2dff04acf7a50fff2a8d5f5a6e1bb69aa9/manifest.json",
-  "sha256": "3bfe8927d9b07d9e86dfef653e6e5e2dff04acf7a50fff2a8d5f5a6e1bb69aa9",
+  "manifest": "firmware/f6c855043acd91afb597307092821f8dbd95a6a25efcbecf68c873bad0b47157/manifest.json",
+  "sha256": "f6c855043acd91afb597307092821f8dbd95a6a25efcbecf68c873bad0b47157",
   "repository": "https://github.com/0ct0s3c/m5khorse-flasher"
 }

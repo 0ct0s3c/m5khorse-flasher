@@ -27,8 +27,8 @@ SOFTWARE.
 
 
 licenses/FreeInk-MIT.txt
-FreeInk PaperMono B/W corrective-refresh reference:
-https://github.com/Free-Ink/freeink-sdk/blob/0888c71b5343bbdf333bf4e1a3c5753f8b2cd014/libs/display/FreeInkDisplay/src/driver/PaperMonoDriver.cpp
+FreeInk PaperMono B/W refresh, selectors, boot conditioning and shutdown reference:
+https://github.com/Free-Ink/freeink-sdk/blob/e41f683ee8b6d4f85f1684c259dc9bde93341f91/libs/display/FreeInkDisplay/src/driver/PaperMonoDriver.cpp
 
 MIT License
 

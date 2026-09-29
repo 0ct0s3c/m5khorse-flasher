@@ -21,26 +21,32 @@ opinions. They have no access to the fucking USB port.
 Black, white and neutral gray. One Tarot illustration at a time. The separate
 librarian portrait has left the page; his language remains a public nuisance.
 
-## A bigger library. A longer alibi.
+## More ways to talk. Fewer interruptions.
 
 The [latest field notes](https://0ct0s3c.github.io/m5khorse-flasher/#whats-new)
-cover all **72 commits from `563ef7d` through `451429f`**, grouped by what changed:
+cover all **34 commits from `451429f` through `dbe6b35`**, grouped by what changed:
 
-- EPUB/FB2 reading and local PDF/DjVu book import.
-- File Commander and USB transfer recovery.
-- NOGPS maps, walking-aware surveys and more careful estimates.
-- Wi-Fi/LoRa spectrum inspection.
-- Named keepsakes, hidden stories and bond chapters.
-- Settings, frontlight and sound controls.
-- On-device clock setup, saved-Wi-Fi NTP and alarms.
-- Flashless e-paper cleanup and explicit recovery.
-- Shared text, NFC, voice, message and memory fixes.
+- Meshtastic, MeshCore chat and EU868 Class A OTAA LoRaWAN payloads on one radio.
+- Conversation cards, drafts, calmer Meshtastic updates and explicit radio recovery.
+- Reworked flashless display sequencing and a frontlight that respects its timer.
+- Retained first presses, shared decision toasts and quiet hidden screens.
+- Honest horse progress, save status and alarm priority.
+- Stronger UI/notification cue signals within the existing output peak limit.
+- Compatible saved formats, shared file/USB handling and bounded packet parsing.
 
-Three highlights lead into nine expandable chapters in the existing monochrome
-page. [Read or download the full changelog](changelog.md) for capabilities,
-limits and complete commit coverage, including the reverted change.
-The dated notes cover firmware `451429f`; the installer always reports the
-actual checked package. No USB connection is needed to read the notes or Tarot.
+Three highlights lead into seven expandable chapters. The horse acquired more
+ways to talk and finally learned that a hidden screen needn't interrupt you.
+Apparently shutting up takes engineering.
+
+[Read or download the full changelog](changelog.md) for setup, limits and complete
+commit coverage. Earlier releases remain in the file; intermediate display and
+Help experiments are marked as superseded. Owner feedback accepted the display
+adaptation, with remaining ghosting reported on Meshtastic. Later fixes still
+need a physical check of that symptom. MeshCore peer and LoRaWAN gateway
+acceptance also remain device checks.
+
+The dated notes cover firmware `dbe6b35`; the installer always reports the actual
+checked package. No USB connection is needed to read the notes or Tarot.
 
 ## Let the bastard in
 
@@ -81,7 +87,7 @@ compiled revision, exact offsets, lengths and hashes.
 | `boot_app0.bin` | `0xe000` |
 | `K-HORSE-papermono.bin` | `0x10000` |
 
-The current package is **`451429f`**. Its embedded revision, image headers,
+The current package is **`dbe6b35`**. Its embedded revision, image headers,
 partition boundaries and all four SHA-256 digests were checked before
 publication. Display appearance, touch, NFC and radio behavior still need a
 hands-on check. The paperwork is in order. My bedside manner remains appalling.
